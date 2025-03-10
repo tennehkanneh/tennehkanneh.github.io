@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Nico Mojo';
+    src: url('/public/src/NicoMoji-Regular.ttf') format('truetype'); /* Path to your TTF file */
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+body { 
+    display: flex;
+    justify-content: flex-start; /* Left-align body content */
+    align-items: center; /* Vertically center body content */
+    min-height: 100vh;      
+    margin: 0; 
+}          
+
+.container {
+    /* Info column, cards column*/
+    display: grid;
+    grid-template-columns: auto auto; 
+
+    font-family: 'Martian Mono', monospace;
+
+    
+    padding: 0px;
+    gap: 0px;
+    margin: 0px;
+    align-items: center; /* Vertically center .info and .bio */
+}
+
+.info {
+    padding: 20px;
+    padding-left: 100px;
+}
+
+h1 {
+    white-space: nowrap;
+    color: #AC1313;
+    font-family: 'Nico Mojo';
+    padding: 0px;
+    gap:0px;
+}
+
+.info h2 {
+    padding: 0px;
+    gap: 0px;
+    
+}
+
+main {
+    align-items: right;
+}
+    
+.cards-container {
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    /* Gap and Padding causing overflow*/
+    gap: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.cards-container h4 {
+    margin: 0; /* Remove default h4 margins */
+}
+
+.cards-container div {
+    background-color: #AC1313;
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    /* Size of Cards */
+    width: 200px;
+    height: 105px;
+
+    /* Center Text in Box */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    /* Box Shadow */
+    box-shadow: 15px 15px black;
+}
+
+
+#personal-statement {
+    /* Place in the first column and first row*/
+    grid-column: 1; 
+    grid-row: 1;  
+
+    align-self: center;
+    justify-self: center;
+}
+
+#blog {
+    /* Place in the second column and middle of 4 rows */
+    grid-column: 2; 
+    grid-row: 2/4; 
+
+    /* align to the start of the grid cell*/
+    align-self: center; 
+    justify-self: center;
+}
+
+#other-things {
+    /* Place in the first column and fourth row */
+    grid-column: 1; 
+    grid-row: 4; 
+
+    /* align to the end of the grid cell */
+    align-self: center; 
+    justify-self: center;
+
+}
+
+.cards-container div:hover {
+    transform: translateY(-5px); /* Slightly move up on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 8px 8px 15px #FB9B00; /* make shadow larger on hover */
+}
