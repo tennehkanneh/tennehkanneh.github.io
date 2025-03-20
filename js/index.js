@@ -1,21 +1,21 @@
 const navigateTo = url => {
-    history.pushState(null, null, "#" + url); // Hash-Based Routing
+    history.pushState(null, null, "#" + url); // No leading slash
     router();
 };
 
 console.log("Loading Index JavaScript");
 
 const router = async () => {
-    const hash = location.hash.slice(1) || "/"; //Get hash, or default to "/"
+    const hash = location.hash.slice(1) || "about"; // Default to "about" instead of "/"
 
     const routes = [
-        { path: "/", view: "/views/about.html" },
-        { path: "/timeline", view: "/views/timeline.html" },
-        { path: "/projects", view: "/views/projects.html" },
-        { path: "/contact-me", view: "/views/contact.html" },
+        { path: "about", view: "/view/about.html" }, 
+        { path: "timeline", view: "/view/timeline.html" },
+        { path: "projects", view: "/view/projects.html" },
+        { path: "contact-me", view: "/view/contact.html" },
     ];
 
-    let match = routes.find(route => location.pathname === route.path) || routes[0];
+    let match = routes.find(route => hash === route.path) || routes[0];
 
     // Fetch the content and update `#content-area`
     fetch(match.view)
@@ -25,23 +25,22 @@ const router = async () => {
         })
         .then(html => {
             document.getElementById("content-area").innerHTML = html;
-
         })
         .catch(error => {
             console.error("Error loading content:", error);
-            document.getElementById("content-area").innerHTML = "<br><br><<br><p>Error loading page.</p>";
+            document.getElementById("content-area").innerHTML = "<p>Error loading page.</p>";
         });
 };
 
-window.addEventListener("popstate", router);
+// Ensure router updates when URL hash changes or on first load
+window.addEventListener("hashchange", router);
+window.addEventListener("load", router);
 
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", e => {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();
-            navigateTo(e.target.getAttribute("href"));
+            navigateTo(e.target.getAttribute("href").substring(1)); // Remove "#" from href
         }
     });
-
-    router();
 });
