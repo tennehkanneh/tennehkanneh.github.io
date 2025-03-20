@@ -10,7 +10,7 @@ const router = async () => {
         { path: "/", view: "/views/about.html" },
         { path: "/timeline", view: "/views/timeline.html" },
         { path: "/projects", view: "/views/projects.html" },
-        { path: "/contact", view: "/views/contact.html" },
+        { path: "/contactme", view: "/views/contact.html" },
     ];
 
     let match = routes.find(route => location.pathname === route.path) || routes[0];
