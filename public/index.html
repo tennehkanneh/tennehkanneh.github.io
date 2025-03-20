@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tenneh Kanneh</title>
-  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
@@ -13,10 +13,10 @@
   <header>
     <nav>
       <ul>
-        <li><a href="/about" onclick="loadPage('about', event)">/about</a></li>
-        <li><a href="/timeline" onclick="loadPage('education', event)">/timeline</a></li>
-        <li><a href="/projects" onclick="loadPage('projects', event)">/projects</a></li>
-        <li><a href="/contactme" onclick="loadPage('contact', event)">/contact me</a></li>
+        <li><a href="/" data-link>/about</a></li>
+        <li><a href="/timeline" data-link>/timeline</a></li>
+        <li><a href="/projects" data-link>/projects</a></li>
+        <li><a href="/contactme" data-link>/contact me</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,7 @@
     <p> Loading... </p>
   </main>
   <!----------------------------------------- END OF: Content ----------------------------------------->
-  <script type="module" src="/public/js/index.js"></script>
+  <script type="module" src="/js/index.js"></script>
 </body>
 
 </html>

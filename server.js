@@ -3,8 +3,11 @@ const path = require("path");
 
 const app = express();
 
-app.get("*/", (req, res) => {
-    res.sendFile(path.resolve("index.html"))
+app.use(express.static(path.resolve(__dirname, "public")));
+
+app.get("/", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "public", "index.html"))
 });
 
-app.listen(process.env.PORT || 55228, () => console.log("Server running... "))
+const PORT = process.env.PORT || 12345;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}...`));

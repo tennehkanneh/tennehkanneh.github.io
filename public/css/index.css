@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 @font-face {
   font-family: 'Nico Mojo';
-  src: url('/public/src/NicoMoji-Regular.ttf') format('truetype'); /* Path to your TTF file */
+  src: url('/assets/NicoMoji-Regular.ttf') format('truetype'); /* Path to your TTF file */
 
 }
 

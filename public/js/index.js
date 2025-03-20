@@ -1,35 +1,45 @@
-console.log("Loading Index JavaScript")
+const navigateTo = url => {
+    history.pushState(null, null, url);
+    router();
+};
 
-function loadPage(page, event = null) {
-    if (event) {
-        event.preventDefault();
-    }
+console.log("Loading Index JavaScript");
 
-    fetch(`/public/views/${page}.html`)
+const router = async () => {
+    const routes = [
+        { path: "/", view: "/views/about.html" },
+        { path: "/timeline", view: "/views/timeline.html" },
+        { path: "/projects", view: "/views/projects.html" },
+        { path: "/contact", view: "/views/contact.html" },
+    ];
+
+    let match = routes.find(route => location.pathname === route.path) || routes[0];
+
+    // Fetch the content and update `#content-area`
+    fetch(match.view)
         .then(response => {
-            if (!response.ok) throw new Error("404 PAGE NOT FOUND Page");
+            if (!response.ok) throw new Error("404 PAGE NOT FOUND");
             return response.text();
         })
         .then(html => {
             document.getElementById("content-area").innerHTML = html;
-    
+
         })
         .catch(error => {
             console.error("Error loading content:", error);
             document.getElementById("content-area").innerHTML = "<p>Error loading page.</p>";
         });
-}
+};
 
-window.addEventListener("DOMContentLoaded", () => loadPage('about'));
+window.addEventListener("popstate", router);
 
-// Handle back/forward navigation
-window.addEventListener("popstate", function (event) {
-    if (event.state && event.state.page) {
-        const cachedPage = sessionStorage.getItem(event.state.page);
-        if (cachedPage) {
-            document.getElementById("content-area").innerHTML = cachedPage;
-        } else {
-            loadPage(event.state.page);
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.addEventListener("click", e => {
+        if (e.target.matches("[data-link]")) {
+            e.preventDefault();
+            navigateTo(e.target.getAttribute("href"));
         }
-    }
+    });
+
+    router();
 });
