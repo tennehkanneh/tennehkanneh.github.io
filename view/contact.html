@@ -7,53 +7,66 @@
 
 <body>
 
+  <!----------------------------------------------- START OF: Content ----------------------------------------------->
   <section>
-    <!-- Source Java script for email sending from https://smtpjs.com/-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/public/js/contact.js"></script>
+    
+    <!-------- START OF: Contact Form -------->
     <div class="email-communication">
       <h2 style="font-size: 35px; text-align: left; margin-bottom: 38px;">Get in Touch</h2>
       <form action="#">
+
         <div class="required-inputs">
           <div>
             <input type="text" placeholder="Full Name (required)" id="name" class="contact-inputs" autocomplete="off"
               required>
-              <div class="error-txt">What should I call you?</div>
+              <div class="error-txt">Full Name can't be blank</div>
           </div>
           <div>
-            <input type="email" placeholder="Email (required)" id="email" class="contact-inputs" autocomplete="off"
+            <input type="email" placeholder="Email Addresss (required)" id="email" class="contact-inputs" autocomplete="off"
               required>
-              <div class="error-txt">How do contact you after?</div>
+              <div class="error-txt">Email Addresss can't be blank</div>
           </div>
         </div>
 
-        <input type="text" placeholder="Subject" class="contact-inputs">
+        <input type="text" placeholder="Subject" class="contact-inputs" id="subject">
+
         <div class="textarea-field">
           <textarea placeholder="Type Me a Message......" id="message" class="contact-inputs"></textarea>
-          <div class="error-txt">Let me know what's on you mind!</div>
+          <div class="error-txt">Your Message can't be blank</div>
         </div>
+
         <button type="submit">SUBMIT</button>
       </form>
     </div>
+    <!--------- END OF: Contact Form --------->
 
-
+    <!-------- START OF: Career Socials -------->
     <div class="other-communication">
       <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank" class="communication-link">
         <img src="/assets/linkedin.svg" alt="LinkedIn icon">
         LinkedIn
       </a>
+
       <a href="https://boisestate.joinhandshake.com/profiles/srxzbv" target="_blank" class="communication-link">
         <img src="/assets/handshake.svg" alt="Handshake icon">
         Handshake
       </a>
+
       <a href="https://github.com/tennehkanneh" target="_blank" class="communication-link">
         <img src="/assets/github.svg" alt="GitHub icon">
         GitHub
       </a>
     </div>
+    <!--------- END OF: Career Socials --------->
 
   </section>
+  <!----------------------------------------------- END OF: Content ----------------------------------------------->
+
+  <!-- Source Java script for email sending from https://smtpjs.com/-->
+  <script src="https://smtpjs.com/v3/smtp.js" id="page-script"></script>
+  <script src="/js/contact.js" id="page-script"></script>
 
 </body>
+
 
 </html>

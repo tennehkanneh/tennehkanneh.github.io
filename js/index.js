@@ -25,12 +25,28 @@ const router = async () => {
         })
         .then(html => {
             document.getElementById("content-area").innerHTML = html;
+
+             // Load page-specific JavaScript
+             loadJS(match.script);
         })
         .catch(error => {
             console.error("Error loading content:", error);
             document.getElementById("content-area").innerHTML = "<p>Error loading page.</p>";
         });
 };
+
+// Function to dynamically load JavaScript
+function loadJS(src) {
+    // Remove existing page-specific script if it exists
+    const existingScript = document.getElementById("page-script");
+    if (existingScript) existingScript.remove();
+
+    // Add new script for the current page
+    const script = document.createElement("script");
+    script.src = src;
+    script.id = "page-script";
+    document.body.appendChild(script);
+}
 
 // Ensure router updates when URL hash changes or on first load
 window.addEventListener("hashchange", router);
