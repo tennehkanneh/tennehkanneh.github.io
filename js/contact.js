@@ -1,14 +1,14 @@
 const form = document.querySelector("form");
-const fullName = document.querySelector("name");
-const email = document.querySelector("email");
-const subject = document.querySelector("subject");
-const message = document.querySelector("message");
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
 
 
 
 function sendEmail() {
     const bodyMessage = ``;
-    
+
     Email.send({
         Host : "s1.maildns.net",
         Username : "tennehkannehofficial@gmail.com",
