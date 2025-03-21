@@ -59,32 +59,12 @@ textarea.contact-inputs {
 }
 
 .email-communication button {
-    background-color: #AC1313;
-    border: none;
-
+    /* Button Size */
     width: 256px;
     height: 37px;
 
-    font-family: 'Martion Mono', monospace;
-    color: white;
-    text-align: center;
-
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 15px 15px black;
-    margin-top: 20px;
-
-}
-
-.email-communication button:hover {
-    transform: translateY(-5px);
-
-    transition: transform 0.3s ease;
-
-    box-shadow: 8px 8px 15px #FB9B00;
-
+    /* Space between button and textbox */ 
+    margin-top: 20px
 }
 
 .other-communication {
