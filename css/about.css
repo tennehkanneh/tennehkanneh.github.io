@@ -75,9 +75,13 @@ h1 {
     /* Size of Cards */
     width: 230px;
     height: 135px;
+
+    h4 {
+        font-size: 16px;
+    }
 }
 
-#personal-statement {
+#personal-statement-btn {
     /* Place in the first column and first row*/
     grid-column: 1; 
     grid-row: 1;  
@@ -86,7 +90,7 @@ h1 {
     justify-self: center;
 }
 
-#blog {
+#blog-btn {
     /* Place in the second column and middle of 4 rows */
     grid-column: 2; 
     grid-row: 2/4; 
@@ -96,7 +100,7 @@ h1 {
     justify-self: center;
 }
 
-#other-things {
+#other-things-btn {
     /* Place in the first column and fourth row */
     grid-column: 1; 
     grid-row: 4; 
@@ -104,6 +108,33 @@ h1 {
     /* align to the end of the grid cell */
     align-self: center; 
     justify-self: center;
+
+}
+
+#content-display {
+    h3 {
+        color: #FB9B00;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    #statement {
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 20px;  
+    }
+
+    padding-bottom: 10px;
+}
+
+#back-btn {
+    /* Button Size */
+    width: 256px;
+    height: 37px;
+
+    font-size: 16px;
 
 }
 
