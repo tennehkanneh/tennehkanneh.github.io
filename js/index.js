@@ -85,46 +85,44 @@ const setupPage = (page) => {
 // About Page Content
 const contentData = {
     "personal-statement": 
-            `<h3>Personal Statement</h3>
-            <div id="statement">
-                <p> Lorem ipsum odor amet, consectetuer adipiscing elit. 
-                    Urna quam phasellus tristique quisque suscipit congue tortor ut. 
-                    Adipiscing vulputate nibh elit class vestibulum platea neque ac ornare. 
-                    Pulvinar sagittis rhoncus posuere aliquam pharetra porta sagittis. 
-                    Placerat hac taciti sit orci fermentum porta velit sem? 
-                    Est pulvinar elit nisi nulla blandit cubilia sapien vehicula? 
-                    Ultricies venenatis hac accumsan nisi enim mus. 
-                    Mollis tempor sodales ullamcorper suscipit placerat accumsan adipiscing nisl conubia. 
-                    Tortor dictum turpis lacinia; convallis laoreet torquent non at.
-                </p>
-                <p> Elementum finibus orci facilisi felis urna senectus. Et netus dictumst et lacus tempor. 
-                    Fermentum ac praesent massa diam massa libero; eros varius. 
-                    Pharetra metus adipiscing class massa consectetur massa donec sem consequat. 
-                    Turpis arcu ipsum torquent potenti eget sit dis duis consequat. 
-                    Nisi ligula magna lacinia vitae vulputate vel ligula mollis. Aliquam netus porta feugiat tellus velit luctus. 
-                    Conubia felis inceptos curabitur ante interdum, ultricies potenti eros. 
-                    Lorem egestas diam venenatis; neque platea fermentum. Taciti interdum nostra mus; id dictumst rhoncus porttitor.
-                </p>
-                <p> Tempor ridiculus facilisis cras potenti lobortis. Mollis euismod maecenas dapibus; est tortor curae nisl. 
-                    Congue enim proin tellus mattis donec ex. Primis magna parturient ultricies velit praesent egestas senectus. 
-                    Turpis taciti taciti turpis arcu malesuada turpis facilisi. 
-                    Taciti consectetur felis tempor hendrerit; sodales lacinia vestibulum ipsum gravida. 
-                    Suspendisse porta nam condimentum ante urna pulvinar conubia.</p>
-                <p> Aplatea rutrum suscipit volutpat ad ornare justo. Facilisis amet nullam tortor arcu potenti morbi pulvinar? 
-                    Maximus bibendum natoque, facilisi purus dui fringilla platea nisl himenaeos. 
-                    Morbi odio facilisi taciti adipiscing semper rutrum iaculis rutrum. 
-                    Interdum nibh donec convallis orci condimentum; elementum aenean nam. 
-                    Posuere tempus lacinia gravida placerat adipiscing lacinia vulputate ut. 
-                    Vehicula ante donec etiam consequat metus himenaeos dignissim vel praesent. Pretium sapien a leo nullam eros.
-                </p>
-                <p> Quisque ridiculus justo tellus proin ligula risus massa. 
-                    Risus amet nec sed iaculis maximus erat. 
-                    Fusce nunc nulla mollis non suscipit vestibulum cras eget augue? Nostra torquent imperdiet natoque aliquam primis dui. 
-                    Maximus quisque ante ex iaculis enim lorem. Vo
-                </p>
-            </div>`
+        `<h3>PERSONAL STATEMENT</h3>
+        <div id="statement">
+            <p>Hello All.<p>
+            <p> My name is Tenneh Kanneh and I’m driven by opportunities to witness the tangible impact of my work. 
+                I find satisfaction in observing both the quantitative and qualitative results of my work, 
+                whether it’s seeing how users interact with my creations, or analyzing the statistical improvements 
+                my efforts have achieved.
+            </p>
+            <p> As a child of refugees, it was common for me to help my parents with household tasks, 
+                including navigating the internet as more companies went digital. Naturally, being the youngest in the family 
+                it was assumed I would understand the technology. However, many websites and apps were not user-friendly 
+                or functioning as expected, which made any hiccup seem like my fault in my parents' eyes. 
+                This left me frustrated and determined to improve digital experiences.
+            </p>
+            <p> I was finally able to pursue my passion by earning an Associate's degree. 
+                Currently, I am pursuing a Bachelor's degree in Computer Science and a certificate in UX Design. 
+                This combination allows me to develop a comprehensive skill set that encompasses both the technical 
+                and user-centric aspects of software development, demonstrating my commitment to creating better digital 
+                experiences and pursuing the passions that drive me.
+            </p>
+            <p> Looking ahead, I am excited about the opportunity to further my career in software development 
+                and full-stack development. I am eager to bring my enthusiasm, innovative mindset, 
+                and dedication to creating user-friendly digital experiences to new challenges and opportunities. 
+                Although I may not have extensive professional experience yet, my academic background and passion for continuous 
+                learning have prepared me to contribute effectively. 
+            </p>
+            <p> Thank you for visiting my portfolio. I hope you enjoy exploring my work! </p>
+        </div>`
     ,
 
-    "blog": `<h3>Blog</h3><p>Thoughts on technology...</p>`,
-    "other-things": `<h3>Other Things</h3><p>Side projects and interests...</p>`
+    "blog": 
+        `<h3>BLOG</h3>
+        <img src="/assets/construction.gif" alt="Files Under Construction" 
+        style="width:500px; height:500px; display: block; align-content: center;">`
+    ,
+
+    "other-things": 
+        `<h3>OTHER THINGS</h3>
+        <img src="/assets/construction.gif" alt="Files Under Construction" 
+        style="width:500px; height:500px; display: block; align-content: center;">`
 };
