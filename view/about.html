@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <title>Tenneh Kanneh | About</title>
@@ -6,44 +7,42 @@
 </head>
 
 <body>
-  <!----------------------------------------- START OF: Name, School, Major, etc. ----------------------------------------->
   <section class="about-container">
     <aside class="gen-info">
       <h1>Tenneh Kanneh</h1>
-      <h2 style="font-size: 25px;">Software Developer</h2>
+      <!--<h2 style="font-size: 25px;">Software Developer</h2>-->
       <span>
-        <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State Univeristy</h2>
-        <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle; break-before: always;">
+        <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State University</h2>
+        <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle;">
           Computer Science</h3>
       </span>
     </aside>
 
-    <!----------------------------------------- END OF: Name, School, Major, etc. ----------------------------------------->
-
-
-
-    <!----------------------------- START OF: Cards (Personal Statment, Blog, Other Things) ------------------------------->
+    <!----------------------------- START OF: Clickable Buttons ------------------------------->
     <div class="about-content">
 
-      <div class="cards-container">
-
-        <div id="personal-statement">
+      <!-- Buttons for each section -->
+      <div class="buttons-container">
+        <button id="personal-statement-btn">
           <h4>PERSONAL STATEMENT</h4>
-        </div>
-
-        <div id="blog">
+        </button>
+        <button id="blog-btn">
           <h4>BLOG</h4>
-        </div>
-
-        <div id="other-things">
+        </button>
+        <button id="other-things-btn">
           <h4>OTHER THINGS</h4>
-        </div>
+        </button>
       </div>
 
+      <!-- Content area (this is where content replaces buttons) -->
+      <div id="content-display" style="display: none;"></div>
+
+      <!-- Back button -->
+      <button id="back-btn" style="display: none;">Back</button>
+
     </div>
+    <!----------------------------- END OF: Clickable Buttons ---------------------------------->
 
-
-    <!----------------------------- END OF: Cards (Personal Statment, Blog, Other Things) ---------------------------------->
   </section>
 </body>
 

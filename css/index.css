@@ -80,3 +80,25 @@ html, body {
 main {
   width: 100%;
 }
+
+button {
+  background-color: #AC1313;
+  border: none;
+  
+  color: white;
+  text-align: center;
+
+  /* Center Text in Box */
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+  /* Box Shadow */
+  box-shadow: 15px 15px black;
+}
+
+button:hover {
+  transform: translateY(-5px); /* Slightly move up on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+  box-shadow: 8px 8px 15px #FB9B00; /* make shadow larger on hover */
+}

@@ -50,7 +50,7 @@ h1 {
     align-items: right;
 }
     
-.cards-container {
+.buttons-container {
     align-self: center;
 
     display: grid;
@@ -67,28 +67,21 @@ h1 {
     }
 }
 
-.cards-container div {
-    background-color: #AC1313;
-    
-    color: white;
-    padding: 20px;
-    text-align: center;
-
-    /* Size of Cards */
-    width: 200px;
-    height: 105px;
-
-    /* Center Text in Box */
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-
-    /* Box Shadow */
-    box-shadow: 15px 15px black;
+.buttons-container.hidden {
+    display: none;
 }
 
+.buttons-container button {
+    /* Size of Cards */
+    width: 230px;
+    height: 135px;
 
-#personal-statement {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+#personal-statement-btn {
     /* Place in the first column and first row*/
     grid-column: 1; 
     grid-row: 1;  
@@ -97,7 +90,7 @@ h1 {
     justify-self: center;
 }
 
-#blog {
+#blog-btn {
     /* Place in the second column and middle of 4 rows */
     grid-column: 2; 
     grid-row: 2/4; 
@@ -107,7 +100,7 @@ h1 {
     justify-self: center;
 }
 
-#other-things {
+#other-things-btn {
     /* Place in the first column and fourth row */
     grid-column: 1; 
     grid-row: 4; 
@@ -118,8 +111,39 @@ h1 {
 
 }
 
-.cards-container div:hover {
-    transform: translateY(-5px); /* Slightly move up on hover */
-    transition: transform 0.3s ease; /* Smooth transition */
-    box-shadow: 8px 8px 15px #FB9B00; /* make shadow larger on hover */
+#content-display {
+    h3 {
+        color: #FB9B00;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #statement {
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 20px;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: left;
+        line-height: 20px;
+    }
+
+    div {
+        width: 730px;
+        height: auto;
+    }
+
+    padding-bottom: 10px;
 }
+
+#back-btn {
+    /* Button Size */
+    width: 256px;
+    height: 37px;
+
+    font-size: 16px;
+
+}
+
