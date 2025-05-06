@@ -1,71 +1,72 @@
-body {
+/* Remove the body styles that conflict with the main layout */
+/* body {
     display: flex;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-}
+} */
 
-section {
-    display: flex;
-
+section#contact-container {
+    flex-direction: column; /* Stack contact elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding: 20px;
+    text-align: center;
+    max-width: 800px; /* Limit width for better readability */
+    width: 90%; /* Take up most of the viewport width */
+    margin: 0 auto; /* Center the section */
 }
 
 .email-communication {
-    /* Form takes up 2/3rd of page with 20px padding around*/
-    width: calc(100% * (2/3));
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Center form contents vertically */
-    justify-content: center;
-    /* Center form contents horizontally */
-
+    align-items: stretch; /* Make form elements take full width */
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .required-inputs {
     display: flex;
-    width: 600px;
-    justify-content: space-between;
-    gap: 5px; 
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .required-inputs > div {
-    width: calc(50% - 6px); 
+    width: 100%; /* Each input takes full width in the flex container */
 }
 
 .contact-inputs {
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: monospace;
     border: 1px solid #AC1313;
-
-    width: 100%; /* Instead of specifing the width to an exact px have it be 100% of parent div */
+    width: 100%;
     box-sizing: border-box;
-
-    padding: 8px;
+    padding: 10px;
 }
 
 textarea.contact-inputs {
-    height: 250px;
-    resize: none;
+    height: 150px; /* Adjust textarea height */
+    resize: vertical; /* Allow vertical resizing */
 }
 
 .error-txt {
-    font-size: 14.5px;
+    font-size: 0.8em;
     color: #FB9B00;
-
     margin-top: 4px;
     display: none;
+    text-align: left; /* Align error text to the left */
 }
 
 .email-communication button {
-    /* Button Size */
-    width: 256px;
-    height: 37px;
-
-    /* Space between button and textbox */ 
-    margin-top: 20px
+    width: auto; /* Adjust width based on content */
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    align-self: center; /* Center the button */
 }
+
+
 
 .other-communication {
     /* Display Content vertically centered */
