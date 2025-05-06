@@ -1,116 +1,119 @@
+/* Import custom font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 
-@font-face {
-  font-family: 'Nico Mojo';
-  src: url('/assets/NicoMoji-Regular.ttf') format('truetype');
-  /* Path to your TTF file */
+/* Root layout styles*/
+html, body {
+  width: 100%;                    /* 100% of display width */
+  height: 100vh;                  /* Entire of height of view port */
 
-}
-
-html,
-body {
-  font-family: 'Martion Mono', monospace;
+  /* Set all margins and padding to 0*/
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  
+  overflow-x: hidden;             /* Prevent horizontal scroll */
+  overflow-y: scroll;             /* Allow vertical scrolling */
+  scroll-snap-type: y mandatory;  /* Enable vertical scroll snapping */
+  
 
-  h1 {
-    font-family: 'Nico Mojo';
-    font-size: 45px;
-    color: #AC1313;
-  }
+  font-family: 'Martian Mono', monospace;   /* Apply custom monospace font to all text*/
 }
 
-main {
-  width: 100%;
-  height: 100vh;
-}
-
-/**************************************************** START OF: Header CSS ****************************************************/
+/* *************************************************** HEADER STYLES *************************************************** */
 header {
-  /* Keep the header at the top */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 1000;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-
-  /************************************************ START OF: Navigation Bar CSS ************************************************/
-
-  /* Navigation Container */
-  nav {
-    padding: 0px 0px;
-    box-sizing: border-box;
-  }
-
-  /* Navigation Unorder Links */
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 18px;
-    max-width: 100%;
-    overflow-x: hidden;
-    padding-right: 18px;
-  }
-
-  /* Navigation Links */
-  nav a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #333;
-    padding: 40px 30px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  /* Hover Effects */
-  nav a:hover {
-    color: rgba(139, 125, 107, 0.8);
-  }
-
-  /* Click Effects */
-  nav a:active {
-    color: #AC1313;
-  }
-
-  /************************************************ END OF: Navigation Bar CSS ************************************************/
-
+  background-color: rgba(255, 255, 255, 0.8);   /* Slightly transparent white */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);     /* Subtle drop shadow*/
+  z-index: 1000;                                  /* Keep header on top of content */
 }
 
-/***************************************************** End OF: Header CSS *****************************************************/
+/* Navigation container */
+nav {
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
 
+/* Navigation list */
+nav ul {
+  max-width: 100%;
+
+  padding: 0 18px 0 0;        /* 18px Padding Right */
+  margin: 0;
+  gap: 18px;
+
+ 
+  display: flex;
+  overflow-x: auto;         /* Allow scrolling on smaller viewports*/
+
+  list-style: none;
+}
+
+/* Navigation links */
+nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  padding: 2px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+}
+
+/* Hover and active link states */
+nav a:hover {
+  color: rgba(139, 125, 107, 0.8);  /* Light brown however*/
+}
+
+nav a:active {
+  color: #AC1313; /* Crimson red for active link */
+}
+
+/***************************************************** MAIN SECTION STYLES *****************************************************/
 main {
+  display: flex;
+  flex-direction: column;   /* Stack child sections vertically */
+}
+
+/* Full-height scrollable section */
+.slide {
   width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* center vertically */
+
+  scroll-snap-align: start; /* Anchor this section at the top of viewport on scroll */
+}
+
+h1 {
+  font-size: 45px;
+  color: #AC1313;
 }
 
 button {
-  background-color: #AC1313;
-  border: none;
-
-  color: white;
-  text-align: center;
-
-  /* Center Text in Box */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 20px;
 
-  /* Box Shadow */
-  box-shadow: 15px 15px black;
+  
+  background-color: #AC1313;
+  color: white;
+  text-align: center;
+  border: none;
+
+  box-shadow: 15px 15px black;    /* Strong box shadow for 3D effect */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+/* Button hover effects */
 button:hover {
-  transform: translateY(-5px);
-  /* Slightly move up on hover */
-  transition: transform 0.3s ease;
-  /* Smooth transition */
-  box-shadow: 8px 8px 15px #FB9B00;
-  /* make shadow larger on hover */
+  transform: translateY(-5px);          /* Slight lift on hover */
+  box-shadow: 8px 8px 15px #FB9B00;   /* Larger, softer shadow */
 }
