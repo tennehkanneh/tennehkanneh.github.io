@@ -6,9 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tenneh Kanneh</title>
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/contact.css">
 </head>
 
+
+
 <body>
+
+  <style>
+    main {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        min-height: 100vh; /* Ensures main takes up full viewport height */
+        margin: 0; /* Removes default margin */
+    }
+
+    img {
+        display: block; /* Ensures proper centering */
+    }
+</style>
   <!----------------------------------------- START OF: Header ----------------------------------------->
   <header>
     <nav>
@@ -24,10 +42,109 @@
 
   <!----------------------------------------- START OF: Content ----------------------------------------->
   <main id="content-area">
-    <p> Loading... </p>
+
+
+    <section class="about-container">
+      <aside class="gen-info">
+        <h1>Tenneh Kanneh</h1>
+        <!--<h2 style="font-size: 25px;">Software Developer</h2>-->
+        <span>
+          <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State University</h2>
+          <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle;">
+            Computer Science</h3>
+        </span>
+      </aside>
+  
+      <!----------------------------- START OF: Clickable Buttons ------------------------------->
+      <div class="about-content">
+  
+        <!-- Buttons for each section -->
+        <div class="buttons-container">
+          <button id="personal-statement-btn">
+            <h4>PERSONAL STATEMENT</h4>
+          </button>
+          <button id="blog-btn">
+            <h4>BLOG</h4>
+          </button>
+          <button id="other-things-btn">
+            <h4>OTHER THINGS</h4>
+          </button>
+        </div>
+  
+        <!-- Content area (this is where content replaces buttons) -->
+        <div id="content-display" style="display: none;"></div>
+  
+        <!-- Back button -->
+        <button id="back-btn" style="display: none;">Back</button>
+  
+      </div>
+      <!----------------------------- END OF: Clickable Buttons ---------------------------------->
+  
+    </section>
+
+    <section class="education-experince-container">
+      <img src="/assets/construction.gif" alt="Files Under Construction" style="width:500px; height:500px; display: block; align-content: center;">
+    </section>
+
+    <section class="projects-container">
+      <img src="/assets/construction.gif" alt="Files Under Construction" style="width:500px; height:500px; display: block; align-content: center;">
+    </section>
+
+    <section class="contact-container">
+      <!-- Source Java script for email sending from https://smtpjs.com/-->
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="/public/js/contact.js"></script>
+      <div class="email-communication">
+        <h2 style="font-size: 35px; text-align: left; margin-bottom: 38px;">Get in Touch</h2>
+        <form action="#">
+          <div class="required-inputs">
+            <div>
+              <input type="text" placeholder="Full Name (required)" id="name" class="contact-inputs" autocomplete="off"
+                required>
+                <div class="error-txt">What should I call you?</div>
+            </div>
+            <div>
+              <input type="email" placeholder="Email (required)" id="email" class="contact-inputs" autocomplete="off"
+                required>
+                <div class="error-txt">How do contact you after?</div>
+            </div>
+          </div>
+  
+          <input type="text" placeholder="Subject" class="contact-inputs">
+          <div class="textarea-field">
+            <textarea placeholder="Type Me a Message......" id="message" class="contact-inputs"></textarea>
+            <div class="error-txt">Let me know what's on you mind!</div>
+          </div>
+          <button type="submit"><h4>SUBMIT</h4></button>
+        </form>
+      </div>
+  
+  
+      <div class="other-communication">
+        <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank" class="communication-link">
+          <img src="/assets/linkedin.svg" alt="LinkedIn icon">
+          LinkedIn
+        </a>
+        <a href="https://boisestate.joinhandshake.com/profiles/srxzbv" target="_blank" class="communication-link">
+          <img src="/assets/handshake.svg" alt="Handshake icon">
+          Handshake
+        </a>
+        <a href="https://github.com/tennehkanneh" target="_blank" class="communication-link">
+          <img src="/assets/github.svg" alt="GitHub icon">
+          GitHub
+        </a>
+      </div>
+  
+    </section>
+
+
+
+
+
+
   </main>
   <!----------------------------------------- END OF: Content ----------------------------------------->
-  <script type="module" src="/js/index.js"></script>
+  <!-- <script type="module" src="/js/index.js"></script> -->
 </body>
 
 </html>
