@@ -9,25 +9,54 @@
 </head>
 
 <body>
+  <!-- <script type="module" src="/js/index.js"></script> -->
   <!----------------------------------------- START OF: Header ----------------------------------------->
-  <header>
+  <!-- <header>
     <nav>
-      <ul>
+    <ul>
         <li><a href="#" data-link>/about</a></li>
         <li><a href="#timeline" data-link>/timeline</a></li>
         <li><a href="#projects" data-link>/projects</a></li>
         <li><a href="#contact-me" data-link>/contact me</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
   <!----------------------------------------- END OF: Header ----------------------------------------->
 
   <!----------------------------------------- START OF: Content ----------------------------------------->
   <main id="content-area">
-    <p> Loading... </p>
+    <div>
+      <h1 id="myText" style="font-size:800%;"> Tenneh Kanneh</h1>
+      <h2 id="myText" style="font-size: 300%; color: #FB9B00; display: inline; vertical-align: middle;">SOFTWARE
+        DEVELOPER</h2>
+      <!-- <div>
+        <h2 style="font-size: 20px; display: inline; vertical-align: middle;">Boise State University</h2>
+        <h3 style="font-size: 16px; opacity: 50%; display: inline; vertical-align: middle;"> Computer Science</h3>
+      </div> -->
+    </div>
+
   </main>
   <!----------------------------------------- END OF: Content ----------------------------------------->
-  <script type="module" src="/js/index.js"></script>
+  <script>
+    const textElement = document.getElementById('myText');
+
+    textElement.addEventListener('mousemove', (event) => {
+      const rect = textElement.getBoundingClientRect();
+      const mouseX = event.clientX - rect.left;
+      const mouseY = event.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const shadowOffsetX = (mouseX - centerX) / 5; // Adjust for sensitivity
+      const shadowOffsetY = (mouseY - centerY) / 5;
+
+      textElement.style.textShadow = `${shadowOffsetX}px ${shadowOffsetY}px #AC1313`;
+    });
+
+    textElement.addEventListener('mouseleave', () => {
+      textElement.style.textShadow = '2px 2px #AC1313'; // Default shadow
+    });
+  </script>
 </body>
 
 </html>
