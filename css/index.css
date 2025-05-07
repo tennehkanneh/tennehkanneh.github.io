@@ -1,126 +1,180 @@
-
 /* ==========================================================================
    Body Styles (for scrolling single-page layout)
    ========================================================================== */
-   @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 
-   body, html {
-       width: 100%;            /* 100% of display width */
-       height: 100vh;          /* Entire of height of view port */
-   
-       /* Set all margins and padding to 0*/
-       margin: 0;
-       padding: 0;
-   
-       scroll-behavior: smooth;
-       scroll-snap-type: y mandatory;
-   
-       font-family: 'Martian Mono', monospace;
-   }
-   
-   /* *************************************************** HEADER STYLES *************************************************** */
-   
-   header {
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-       padding: 10px 20px;
-     
-       background-color: rgba(255, 255, 255, 0.8);   /* Slightly transparent white */
-       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);     /* Subtle drop shadow*/
-       z-index: 1000;                                  /* Keep header on top of content */
-   }
-   
-   /* Navigation list */
-   nav ul {
-       max-width: 100%;
-     
-       padding: 0 18px 0 0;        /* 18px Padding Right */
-       margin: 0;
-       gap: 18px;
-     
-      
-       display: flex;             /* Display list in a row */
-       float: right;              /* Align list to the right */
-       overflow-x: auto;          /* Allow scrolling on smaller viewports*/
-     
-       list-style: none;
-     }
-   
-   /* Navigation links */
-   nav a {
-       padding: 2px 10px;
-       
-       text-decoration: none;
-       font-size: 13px;
-       color: #333;
-       transition: background-color 0.3s, color 0.3s;
-   }
-   
-   /* Hover link state */
-   nav a:hover {
-       color: #AC1313; 
-   }
-   
-   /* ==========================================================================
+
+body, html {
+    width: 100%;
+    /* 100% of display width */
+    height: 100vh;
+    /* Entire of height of view port */
+
+    /* Set all margins and padding to 0*/
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    font-family: 'Martian Mono', monospace;
+}
+
+/* *************************************************** HEADER STYLES *************************************************** */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle drop shadow*/
+    z-index: 1000;
+    /* Keep header on top of content */
+}
+
+/* Navigation list */
+nav ul {
+    max-width: 100%;
+
+    padding: 0 18px 0 0;
+    /* 18px Padding Right */
+    margin: 0;
+    gap: 18px;
+
+
+
+    /* Set all margins and padding to 0*/
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    font-family: 'Martian Mono', monospace;
+}
+
+/* *************************************************** HEADER STYLES *************************************************** */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle drop shadow*/
+    z-index: 1000;
+    /* Keep header on top of content */
+}
+
+/* Navigation list */
+nav ul {
+    max-width: 100%;
+
+    padding: 0 18px 0 0;
+    /* 18px Padding Right */
+    margin: 0;
+    gap: 18px;
+
+
+    display: flex;
+    /* Display list in a row */
+    float: right;
+    /* Align list to the right */
+    overflow-x: auto;
+    /* Allow scrolling on smaller viewports*/
+
+    list-style: none;
+}
+
+/* Navigation links */
+nav a {
+    padding: 2px 10px;
+
+    text-decoration: none;
+    font-size: 13px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover link state */
+nav a:hover {
+    color: #AC1313;
+}
+
+/* ==========================================================================
       Main Styles (for scrolling single-page layout)
       ========================================================================== */
-   
-   main {
-       display: flex;
-       flex-direction: column;   /* Stack child sections vertically */
-   }
-   
-   /* Full-height scrollable section */
-   .slide {
-       width: 100%;
-       min-height: 100vh;
-       
-       display: flex;
-       align-items: center;
-       
-       scroll-snap-align: start;
-       
-       
-       padding: 20px;              /* Add padding for all slides */
-       box-sizing: border-box;     /* Include padding in element's total width and height */
-   }
-   
-   /* *************************************************** BUTTON STYLES *************************************************** */
-   
-   button {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       padding: 10px 20px;
-     
-       
-       background-color: #AC1313;
-       color: white;
-       text-align: center;
-       border: none;
-     
-       box-shadow: 15px 15px black;    /* Strong box shadow for 3D effect */
-       cursor: pointer;
-       transition: transform 0.3s ease, box-shadow 0.3s ease;
-   }
-   
-   button h4 {
-       font-size: 16px;
-   }
-     
-     
-   /* Button hover effects */
-   button:hover {
-       transform: translateY(-5px);          /* Slight lift on hover */
-       box-shadow: 8px 8px 15px #FB9B00;   /* Larger, softer shadow */
-   }
-   
-   
-   /* *************************************************** CONSTRUCTION STYLES *************************************************** */
-   
-   img[src$="construction.gif"] {
-       display: block;
-       margin: 0 auto; /* centers the image horizontally */
-   }
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* Stack child sections vertically */
+}
+
+/* Full-height scrollable section */
+.slide {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    scroll-snap-align: start;
+
+
+    padding: 20px;
+    /* Add padding for all slides */
+    box-sizing: border-box;
+    /* Include padding in element's total width and height */
+}
+
+/* *************************************************** BUTTON STYLES *************************************************** */
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+
+
+    background-color: #AC1313;
+    color: white;
+    text-align: center;
+    border: none;
+
+    box-shadow: 15px 15px black;
+    /* Strong box shadow for 3D effect */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button h4 {
+    font-size: 16px;
+}
+
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 8px 8px 15px #FB9B00;
+    /* Larger, softer shadow */
+}
+
+
+/* *************************************************** CONSTRUCTION STYLES *************************************************** */
+
+img[src$="construction.gif"] {
+    display: block;
+    margin: 0 auto;
+    /* centers the image horizontally */
+}
