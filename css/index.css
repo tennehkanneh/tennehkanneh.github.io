@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Martian Mono', monospace;
+}
+
 body, html {
     width: 100%;
     /* 100% of display width */
@@ -17,46 +23,7 @@ body, html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 
-    font-family: 'Martian Mono', monospace;
-}
-
-/* *************************************************** HEADER STYLES *************************************************** */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Slightly transparent white */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Subtle drop shadow*/
-    z-index: 1000;
-    /* Keep header on top of content */
-}
-
-/* Navigation list */
-nav ul {
-    max-width: 100%;
-
-    padding: 0 18px 0 0;
-    /* 18px Padding Right */
-    margin: 0;
-    gap: 18px;
-
-
-
-    /* Set all margins and padding to 0*/
-    margin: 0;
-    padding: 0;
-
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-
-    font-family: 'Martian Mono', monospace;
-}
+} 
 
 /* *************************************************** HEADER STYLES *************************************************** */
 
