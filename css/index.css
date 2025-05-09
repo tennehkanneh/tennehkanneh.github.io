@@ -235,3 +235,110 @@ button:hover {
 /* =======================================================================================================================================
    Contact Me Section Styles (for scrolling single-page layout)
    ======================================================================================================================================= */
+
+
+
+
+/* *************************************************** Contact FORM STYLES *************************************************** */
+.email-communication {
+    width: 100%;
+    
+    padding: 20px;
+    margin: 0px auto; /* Center the section */
+    
+    flex-direction: column;         /* Stack contact elements vertically */
+    align-items: center;            /* Center content horizontally */
+    justify-content: center;        /* Center content vertically */
+
+   
+    /* text-align: center; */
+}
+
+.required-inputs {
+    margin-bottom: 15px;
+    gap: 10px;
+    
+    display: flex;
+}
+
+.required-inputs > div {
+    width: 100%; /* Each input takes full width in the flex container */
+}
+
+.contact-inputs {
+    width: 100%;
+    
+    padding: 10px;
+    margin-top: 5px;
+    
+
+    font-family: monospace;             /* Change font of input holder text */
+    border: 1px solid #AC1313;
+    box-sizing: border-box;
+}
+
+textarea.contact-inputs {
+    height: 150px;                  /* Adjust textarea height */
+    resize: vertical;               /* Allow vertical resizing */
+}
+
+.error-txt {
+    margin-top: 4px;
+    text-align: left;               /* Align error text to the left */
+    
+    display: none;
+
+    font-size: 0.8em;
+    color: #FB9B00;
+}
+
+.email-communication button {
+    width: 200px;                    /* Adjust width based on content */
+
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+
+/* *************************************************** LINK STYLES *************************************************** */
+
+.communication-link img {
+    width: 60px;
+    height: 60px;
+
+    /* margin-right: 10px; */
+
+    transition: opacity 0.3s ease;
+}
+
+/* Display Content vertically centered */
+.other-communication {
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+
+    /* width: calc(100% * (1/3)); */
+
+    gap: 30px;
+    padding: 30px;
+}
+
+.communication-link {
+    display: inline-flex;       /* Line up the link names with their logos */
+    align-items: center;        /* Center them with the logos */
+
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.communication-link:hover {
+    opacity: 0.7;
+}
+
+.communication-link:active {
+    color: #FB9B00;
+}
