@@ -242,7 +242,7 @@ button:hover {
 .email-communication {
     grid-template-columns: 1;
 
-    width: 45rem;
+    width: 70rem;
     margin: 0px auto;               /* Center the section */
 
     text-align: center;             /* Center header */
@@ -294,7 +294,7 @@ button:hover {
 }
 
 textarea.contact-inputs {
-    height: 15rem;                  /* Adjust textarea height */
+    height: 30rem;                  /* Adjust textarea height */
     resize: none;                   /* No vertical resizing */
 }
 
