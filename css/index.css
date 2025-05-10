@@ -38,7 +38,7 @@ h1, h2, a, figcaption {
 
 h2, h2 span {
     font-family: "Zilla Slab", serif;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
 }
 
 /* *************************************************** HEADER STYLES *************************************************** */
@@ -171,14 +171,14 @@ button:hover {
 
 .about-info h1 {
     font-family: "Zilla Slab Highlight", serif;
-    font-size: 7rem;
+    font-size: 5.9rem;
     color: #F0EDEE;
 
 }
 
 .about-info h2 span {
     font-family: "Zilla Slab", serif;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: #7C9395;
 }
 
