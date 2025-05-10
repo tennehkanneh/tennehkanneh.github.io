@@ -10,7 +10,8 @@
     margin: 0;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     /* 100% of display width */
     height: 100vh;
@@ -32,11 +33,16 @@ p {
     font-size: 1.5rem;
 }
 
-h1, h2, a, figcaption {
+h1,
+h2,
+h3,
+a,
+figcaption {
     font-weight: 300;
 }
 
-h2, h2 span {
+h2,
+h2 span {
     font-family: "Zilla Slab", serif;
     font-size: 3.2rem;
 }
@@ -49,7 +55,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1rem 2rem;
-   
+
     /* Subtle drop shadow*/
     z-index: 1000;
     /* Keep header on top of content */
@@ -81,7 +87,7 @@ header a {
 
     text-decoration: none;
     font-family: "Zilla Slab", serif;
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: #F0EDEE;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -135,7 +141,7 @@ button {
     font-family: "Zilla Slab", serif;
     font-weight: 300;
     font-size: 2rem;
-    
+
     color: #F0EDEE;
     border: .1rem solid #F0EDEE;
     background-color: #0A090C;
@@ -145,11 +151,14 @@ button {
 button:hover {
     cursor: pointer;
 
-    transform: translateY(-5px);              /* Slightly move up on hover */
+    transform: translateY(-5px);
+    /* Slightly move up on hover */
     background-color: #F0EDEE;
     color: #0A090C;
-    transition: transform 0.3s ease;          /* Smooth transition */
-    box-shadow: 8px 8px 15px #2c666e;       /* Create a redish shadow */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+    box-shadow: 8px 8px 15px #2c666e;
+    /* Create a redish shadow */
 }
 
 /* =======================================================================================================================================
@@ -163,7 +172,7 @@ button:hover {
     grid-template-columns: 1fr 1fr;
 }
 
-#about-me .photo-info  {
+#about-me .photo-info {
     grid-column: 2;
 }
 
@@ -188,7 +197,8 @@ button:hover {
     width: 40rem;
     height: 35.5rem;
 
-    margin-bottom: 1rem;        /* Add some space between the image and caption */
+    margin-bottom: 1rem;
+    /* Add some space between the image and caption */
     /* Center the figure */
     margin-left: auto;
     margin-right: auto;
@@ -196,7 +206,7 @@ button:hover {
     display: block;
     border: 1rem solid #7C9395;
     box-shadow: 26px -26px #F0EDEE;
-    
+
 }
 
 .about-photo figcaption {
@@ -221,10 +231,91 @@ button:hover {
    Projects Section Styles (for scrolling single-page layout)
    ======================================================================================================================================= */
 
-#projects img {
-    display: block;
-    margin: 0 auto;
-    /* centers the image horizontally */
+#projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* *************************************************** LEFT RIGHT BUTTON STYLES *************************************************** */
+
+.nav-arrow {
+    width: 7rem;
+    height: 7rem;
+
+
+    border-radius: 50%;
+
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.left {
+    grid-column: 1;
+    float: left;
+
+    padding-right: 2rem;
+}
+
+.right {
+    grid-column: 3;
+    float: right;
+
+    padding-left: 2rem;
+}
+
+/* *************************************************** PROJECT INFO + PHOTO STYLES *************************************************** */
+
+.project {
+    grid-column: 2;
+
+    padding: 2rem;
+    display: flex;
+}
+
+
+.project-photo img {
+    width: 50rem;
+    height: 35.5rem;
+
+    border: 1rem solid #7C9395;
+    box-shadow: 26px -26px #F0EDEE;
+}
+
+.project-info {
+    padding-left: 5rem;
+
+}
+
+.project-info h2 {
+    padding-bottom: 1rem;
+
+}
+
+.project-info h3 {
+    padding-bottom: 1rem;
+
+    font-family: "Zilla Slab", serif;
+    font-size: 1.3rem;
+    color: #2c666e;
+
+}
+
+.skills-used {
+    padding-top: 1rem;
+
+    display: inline-flex;
+    align-items: center;
+}
+
+.skills-used span {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    
+    border-radius: 1rem;
+    background-color: #7d7b7d;      
+    color: #0a090c;                 
+    
+    font-size: 1.1rem;             
 }
 
 /* =======================================================================================================================================
@@ -233,8 +324,9 @@ button:hover {
 
 
 #contact-me {
-   display: grid;
-   grid-template-columns: auto auto;        /* Two columns one for the form and the other for links */
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Two columns one for the form and the other for links */
 }
 
 /* *************************************************** Contact FORM STYLES *************************************************** */
@@ -243,9 +335,11 @@ button:hover {
     grid-template-columns: 1;
 
     width: 70rem;
-    margin: 0px auto;               /* Center the section */
+    margin: 0px auto;
+    /* Center the section */
 
-    text-align: center;             /* Center header */
+    text-align: center;
+    /* Center header */
 }
 
 #contact-me form {
@@ -257,27 +351,31 @@ button:hover {
 
 .contact-inputs {
     width: 100%;
-    
+
     padding: 1rem;
     margin-top: .5rem;
 
     border: none;
     border-bottom: 2px solid #7d7b7d;
     background-color: #F0EDEE;
-   
-    font-family: "Noto Sans", sans-serif;                       /* Change font of input holder text */
-    
+
+    font-family: "Noto Sans", sans-serif;
+    /* Change font of input holder text */
+
     box-sizing: border-box;
-    transition: border-bottom-color 0.3s, color 0.3s ease;      /* Smooth transition for focus effect */
+    transition: border-bottom-color 0.3s, color 0.3s ease;
+    /* Smooth transition for focus effect */
 }
 
 .contact-inputs:focus {
-    outline: none;                          /* Remove the default focus outline */
+    outline: none;
+    /* Remove the default focus outline */
     color: #564d4a;
     border-bottom: 2px solid #46b393;
 }
 
-.contact-inputs:focus::placeholder {        /* select the input when focus then select the placeholder */
+.contact-inputs:focus::placeholder {
+    /* select the input when focus then select the placeholder */
     color: #46b393;
 }
 
@@ -285,23 +383,28 @@ button:hover {
 .required-inputs {
     width: 100%;
     display: flex;
-    gap: 0.5rem;                    /* This creates the space between the divs */
+    gap: 0.5rem;
+    /* This creates the space between the divs */
     box-sizing: border-box;
 }
 
-.required-inputs > div {
-    width: calc(50% - 0.25rem);     /* Each div takes up roughly half the width minus half the gap */
+.required-inputs>div {
+    width: calc(50% - 0.25rem);
+    /* Each div takes up roughly half the width minus half the gap */
 }
 
 textarea.contact-inputs {
-    height: 30rem;                  /* Adjust textarea height */
-    resize: none;                   /* No vertical resizing */
+    height: 30rem;
+    /* Adjust textarea height */
+    resize: none;
+    /* No vertical resizing */
 }
 
 .error-txt {
     margin-top: .4rem;
-    text-align: left;               /* Align error text to the left */
-    
+    text-align: left;
+    /* Align error text to the left */
+
     display: none;
 
     font-size: 0.8em;
@@ -309,7 +412,8 @@ textarea.contact-inputs {
 }
 
 .email-communication button {
-    width: 20rem;                    /* Adjust width based on content */
+    width: 20rem;
+    /* Adjust width based on content */
 
     padding: 0px 2rem;
     margin-top: 2rem;
@@ -329,8 +433,10 @@ textarea.contact-inputs {
 }
 
 .communication-link {
-    display: inline-flex;       /* Line up the link names with their logos */
-    align-items: center;        /* Center them with the logos */
+    display: inline-flex;
+    /* Line up the link names with their logos */
+    align-items: center;
+    /* Center them with the logos */
 
     text-decoration: none;
     color: #F0EDEE;
@@ -347,5 +453,6 @@ textarea.contact-inputs {
 }
 
 .communication-link:hover {
-    opacity: 70%;               /* Allows the hover to work on img and a elements at same time*/
+    opacity: 70%;
+    /* Allows the hover to work on img and a elements at same time*/
 }
