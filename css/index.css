@@ -125,9 +125,31 @@ main {
 
 /* *************************************************** BUTTON STYLES *************************************************** */
 
-button {
-    border-radius: 0px;
 
+button {
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-size: 2rem;
+    
+    color: #F0EDEE;
+    border: .1rem solid #F0EDEE;
+    background-color: #0A090C;
+
+}
+
+button:hover {
+    cursor: pointer;
+
+    transform: translateY(-5px);              /* Slightly move up on hover */
+    background-color: #F0EDEE;
+    color: #0A090C;
+    transition: transform 0.3s ease;          /* Smooth transition */
+    box-shadow: 8px 8px 15px #2c666e;       /* Create a redish shadow */
 }
 
 /* =======================================================================================================================================
