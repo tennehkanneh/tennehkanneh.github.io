@@ -29,16 +29,16 @@ body, html {
 
 p {
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 h1, h2, a, figcaption {
     font-weight: 300;
 }
 
-h2 {
+h2, h2 span {
     font-family: "Zilla Slab", serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 /* *************************************************** HEADER STYLES *************************************************** */
@@ -59,7 +59,7 @@ header {
 nav ul {
     max-width: 100%;
 
-    padding: 0 1.8rem 0 0;
+    padding: 0 2rem 0 0;
     /* 18px Padding Right */
     margin: 0;
     gap: 18px;
@@ -157,17 +157,10 @@ button:hover {
    ======================================================================================================================================= */
 
 #about-me {
+    width: 100%;
+
     display: grid;
-    grid-template-columns: auto auto;
-
-    justify-content: center;
-}
-
-#about-me .about-info {
-    grid-column: 1;
-    width: 40rem;
-
-    padding-right: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 #about-me .photo-info  {
@@ -178,26 +171,32 @@ button:hover {
 
 .about-info h1 {
     font-family: "Zilla Slab Highlight", serif;
-    font-size: 5rem;
+    font-size: 7rem;
     color: #F0EDEE;
 
 }
 
 .about-info h2 span {
     font-family: "Zilla Slab", serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #7C9395;
 }
 
 /* *************************************************** ABOUT PHOTO DIV STYLES *************************************************** */
 
 .about-photo img {
-    width: 35rem;
-    height: 30.5rem;
+    width: 40rem;
+    height: 35.5rem;
+
+    margin-bottom: 1rem;        /* Add some space between the image and caption */
+    /* Center the figure */
+    margin-left: auto;
+    margin-right: auto;
 
     display: block;
     border: 1rem solid #7C9395;
     box-shadow: 26px -26px #F0EDEE;
+    
 }
 
 .about-photo figcaption {
