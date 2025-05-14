@@ -197,6 +197,16 @@ button:hover {
     color: #7C9395;
 }
 
+.about-info a img {
+    width: 3rem;
+    height: 3rem;
+
+    margin-right: 2rem;
+    margin-top: 1rem;
+
+    border: .2rem solid #F0EDEE;
+}
+
 /* *************************************************** ABOUT PHOTO DIV STYLES *************************************************** */
 
 .about-photo img {
