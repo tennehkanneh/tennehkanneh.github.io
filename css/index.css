@@ -47,6 +47,12 @@ h2 span {
     font-size: 3.2rem;
 }
 
+.section-headers {
+    padding-top: 3rem;
+    text-align: center;
+    font-family: "Zilla Slab Highlight", serif;
+}
+
 /* *************************************************** HEADER STYLES *************************************************** */
 
 header {
@@ -221,10 +227,25 @@ button:hover {
    Education and Experince Section Styles (for scrolling single-page layout)
    ======================================================================================================================================= */
 
-#education-and-experience img {
-    display: block;
-    margin: 0 auto;
-    /* centers the image horizontally */
+#education-and-experience {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    color: #F0EDEE;
+}
+
+.timeline-container {
+    grid-column: 1;
+    justify-self: center;
+}
+
+.timeline-item {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.timeline-item div {
+    border: .1rem solid #F0EDEE;
 }
 
 /* =======================================================================================================================================
@@ -241,12 +262,13 @@ button:hover {
 /* *************************************************** PROJECT INFO + PHOTO STYLES *************************************************** */
 
 .project-container {
-    padding-top: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
     gap: .4rem;                  /* Add some gap between image and text */
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-self: center;
             
     max-width: 120rem;
     width: 95%;
@@ -353,8 +375,14 @@ button:hover {
    Contact Me Section Styles (for scrolling single-page layout)
    ======================================================================================================================================= */
 
-
 #contact-me {
+    display: grid;
+    grid-template-columns: 1fr;                  /* Single column layout for main content */
+}
+
+.contact-container{
+    grid-column: 1;
+
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns one for the form and the other for links */
 }
@@ -370,6 +398,10 @@ button:hover {
 
     text-align: center;
     /* Center header */
+}
+
+.email-communication h2 {
+    font-size: 2.5rem;
 }
 
 #contact-me form {
@@ -456,6 +488,7 @@ textarea.contact-inputs {
 .other-communication {
     grid-template-columns: 2;
 
+    padding-top: 5.5rem;
     gap: 3rem;
 
     /* Center the contacts */

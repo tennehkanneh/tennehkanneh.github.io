@@ -56,15 +56,42 @@
 
     <!----------------------------------------- SECTION: Education & Experince ----------------------------------------->
     <section class="slide" id="education-and-experience">
-       <a href="" target="_blank" class="communication-link">
-          <img src="/assets/resume.svg" alt="Resume icon">
-          Want to See My Resume Instead?
-        </a>
+      <h2 class="section-headers">Education and Experience</h2>
+      <div class="timeline-container">
+        <div class="timeline-item education">
+          <div><h3>Job Title 1</h3>
+          <p>Company Name</p>
+          <em class="date-range">2020 - 2022</em>
+          <p>Description of responsibilities and achievements.</p></div>
+        </div>
+        <div class="timeline-item experience">
+          <div><h3>Job Title 1</h3>
+          <p>Company Name</p>
+          <em class="date-range">2020 - 2022</em>
+          <p>Description of responsibilities and achievements.</p></div>
+        </div>
+        <div class="timeline-item education">
+          <div><h3>Job Title 1</h3>
+          <p>Company Name</p>
+          <em class="date-range">2020 - 2022</em>
+          <p>Description of responsibilities and achievements.</p></div>
+        </div>
+        <div class="timeline-item experience">
+          <div><h3>Job Title 1</h3>
+          <p>Company Name</p>
+          <em class="date-range">2020 - 2022</em>
+          <p>Description of responsibilities and achievements.</p></div>
+        </div>
+      </div>
+      <a href="" target="_blank" class="communication-link resume">
+        <img src="/assets/resume.svg" alt="Resume icon">
+        Want to See My Resume Instead?
+      </a>
     </section>
 
     <!----------------------------------------- SECTION: Projects ----------------------------------------->
     <section class="slide" id="projects">
-
+      <h2 class="section-headers">Projects</h2>
       <div class="project-container">
 
         <figure class="project-photo">
@@ -96,7 +123,7 @@
       </div>
 
       <div class="project-indicator">
-        <span class="nav-arrow-indicator" data-direction="prev">&#10094;</span> 
+        <span class="nav-arrow-indicator" data-direction="prev">&#10094;</span>
         <span class="project-num" data-index="0">1</span>
         <span class="project-num" data-index="1">2</span>
         <span class="project-num" data-index="2">3</span>
@@ -107,54 +134,57 @@
 
     <!----------------------------------------- SECTION: Contact Me ----------------------------------------->
     <section class="slide" id="contact-me">
+      <h2 class="section-headers">Contact Me</h2>
       <!-- Source Java script for email sending from https://smtpjs.com/-->
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script src="/js/contact.js"></script>
-      <div class="email-communication">
-        <h2>Get in Touch</h2>
-        <br><br><br>
-        <form action="#">
-          <div class="required-inputs">
-            <div>
-              <input type="text" placeholder="Full Name (required)" id="name" class="contact-inputs" autocomplete="off"
-                required>
-              <!-- <div class="error-txt">What should I call you?</div> -->
+      <div class="contact-container">
+        <div class="email-communication">
+          <h2>Send Me A Quick Email</h2>
+          <br><br><br>
+          <form action="#">
+            <div class="required-inputs">
+              <div>
+                <input type="text" placeholder="Full Name (required)" id="name" class="contact-inputs"
+                  autocomplete="off" required>
+                <!-- <div class="error-txt">What should I call you?</div> -->
+              </div>
+              <div>
+                <input type="email" placeholder="Email (required)" id="email" class="contact-inputs" autocomplete="off"
+                  required>
+                <!-- <div class="error-txt">How do contact you after?</div> -->
+              </div>
             </div>
-            <div>
-              <input type="email" placeholder="Email (required)" id="email" class="contact-inputs" autocomplete="off"
-                required>
-              <!-- <div class="error-txt">How do contact you after?</div> -->
+
+            <input type="text" placeholder="Subject" class="contact-inputs">
+            <div class="textarea-field">
+              <textarea placeholder="Type Me a Message......" id="message" class="contact-inputs"></textarea>
+              <!-- <div class="error-txt">Let me know what's on you mind!</div> -->
             </div>
-          </div>
+          </form>
+          <button type="submit">Send</button>
+        </div>
 
-          <input type="text" placeholder="Subject" class="contact-inputs">
-          <div class="textarea-field">
-            <textarea placeholder="Type Me a Message......" id="message" class="contact-inputs"></textarea>
-            <!-- <div class="error-txt">Let me know what's on you mind!</div> -->
-          </div>
-        </form>
-        <button type="submit">Send</button>
-      </div>
-
-      <div class="other-communication">
-        <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank" class="communication-link">
-          <img src="/assets/linkedin.svg" alt="LinkedIn icon">
-          LinkedIn
-        </a>
-        <a href="https://boisestate.joinhandshake.com/profiles/srxzbv" target="_blank" class="communication-link">
-          <img src="/assets/handshake.svg" alt="Handshake icon">
-          Handshake
-        </a>
-        <a href="https://github.com/tennehkanneh" target="_blank" class="communication-link">
-          <img src="/assets/github.svg" alt="GitHub icon">
-          GitHub
-        </a>
+        <div class="other-communication">
+          <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank" class="communication-link">
+            <img src="/assets/linkedin.svg" alt="LinkedIn icon">
+            LinkedIn
+          </a>
+          <a href="https://boisestate.joinhandshake.com/profiles/srxzbv" target="_blank" class="communication-link">
+            <img src="/assets/handshake.svg" alt="Handshake icon">
+            Handshake
+          </a>
+          <a href="https://github.com/tennehkanneh" target="_blank" class="communication-link">
+            <img src="/assets/github.svg" alt="GitHub icon">
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
   <script type="module" src="/js/index.js"></script>
   <script type="module" src="/js/projects.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/js/contact.js"></script>
 </body>
 
 </html>
