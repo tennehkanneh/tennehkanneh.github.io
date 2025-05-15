@@ -49,7 +49,7 @@ h2 span {
 
 .section-headers {
     padding-top: 3rem;
-    text-align: center;
+    text-align: center !important;
     font-family: "Zilla Slab Highlight", serif;
 }
 
@@ -114,8 +114,7 @@ header nav ul li a.active {
 
 main {
     display: flex;
-    flex-direction: column;
-    /* Stack child sections vertically */
+    flex-direction: column;             /* Stack child sections vertically */
 }
 
 /* Full-height scrollable section */
@@ -239,22 +238,33 @@ button:hover {
 
 #education-and-experience {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
 
-    color: #F0EDEE;
+.resume-container {
+    padding-top: 3rem;
+    gap: .4rem;                  /* Add some gap between image and text */
+
+    
+            
+    width: 100%;
 }
 
 
+/* *************************************************** RESUME PREVIEW STYLES *************************************************** */
 
-.resume-preview {
-    grid-column: 1;
+.resume-container iframe {
     width: 43.25rem;
+    height: 35rem;
+    
 }
+
+/* *************************************************** RESUME OPTION STYLES *************************************************** */
 
 .resume-options {
-    grid-column: 2;
     width: 43.25rem;
-    
+   
 }
 
 /* =======================================================================================================================================
@@ -389,7 +399,7 @@ button:hover {
     grid-template-columns: 1fr;                  /* Single column layout for main content */
 }
 
-.contact-container{
+.contact-container {
     grid-column: 1;
 
     display: grid;
