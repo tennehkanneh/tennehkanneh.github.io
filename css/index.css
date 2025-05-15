@@ -239,83 +239,22 @@ button:hover {
 
 #education-and-experience {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
 
     color: #F0EDEE;
 }
 
-.timeline-container {
+
+
+.resume-preview {
     grid-column: 1;
-    justify-self: center;
+    width: 43.25rem;
 }
 
-.timeline-item {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
-}
-
-.timeline-item div {
-    padding: 1rem;
-    border: .1rem solid #F0EDEE;
-}
-
-.timeline-item.education {
-    padding-left: 3rem;
-    transform: translateX(9rem);
-}
-
-.timeline-item.education:not(:first-child) {
-   border-left: .25rem solid #F0EDEE;
-}
-
-.timeline-item.experience {
-    padding-right: 3rem;
-    transform: translateX(-9rem);
-}
-
-.timeline-item.experience:not(:first-child) {
-   border-right: .25rem solid #F0EDEE;
-}
-
-/* .timeline-item.education:not(:first-child)::before,  */
-.timeline-item.experience::before {
-    content: '';
-    background: #F0EDEE;
-    width: 3rem;
-    height: .25rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* .timeline-item.education:not(:first-child)::before {
-   left: 0;
-} */
-
-.timeline-item.experience::before {
-    right: 0;
-}
-
-/* .timeline-item.education:not(:first-child) div::before, */
-.timeline-item.experience div::before {
-    content: ''; 
-    background: #fff;
-    box-shadow: 0 0 0.5em #0d71fc; 
-    width: 0.8em; 
-    height: 0.8em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-}
-
-/* .timeline-item.education:not(:first-child) div::before {
-   left:  -.5rem;
-} */
-
-.timeline-item.experience div::before {
-    right: -.5rem;
+.resume-options {
+    grid-column: 2;
+    width: 43.25rem;
+    
 }
 
 /* =======================================================================================================================================
