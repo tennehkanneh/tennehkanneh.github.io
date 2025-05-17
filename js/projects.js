@@ -79,13 +79,13 @@ function updateProjectIndicator(index) {
     let indicatorHTML = "";
     for (let i = 0; i < projects.length; i++) {
         if (i === index) {
-            indicatorHTML += `<span class="active">${i + 1}</span>`; // Highlight the current project
+            indicatorHTML += `<span class="active"><p>${i + 1}</p></span>`; // Highlight the current project
         } else {
-            indicatorHTML += `<span data-index="${i}">${i + 1}</span>`; // clickable
+            indicatorHTML += `<span data-index="${i}"><p>${i + 1}</p></span>`; // clickable
         }
     }
 
-    indicatorHTML = `<span class="nav-arrow-indicator" data-direction="prev">&#10094;</span>` + indicatorHTML + `<span class="nav-arrow-indicator" data-direction="next">&#10095;</span>`;
+    indicatorHTML = `<span class="nav-arrow-indicator" data-direction="prev"><p>&#10094; Previous</p></span>` + indicatorHTML + `<span class="nav-arrow-indicator" data-direction="next"><p>Next &#10095;</p></span>`;
     projectIndicator.innerHTML = indicatorHTML;
 
     // Attach event listeners to the spans

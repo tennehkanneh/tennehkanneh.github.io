@@ -5,12 +5,15 @@
    viewBox="0 0 20 20"
    version="1.1"
    id="svg1"
-   sodipodi:docname="linkedin.svg"
+   sodipodi:docname="linkedin-about.svg"
    inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs1" />
   <sodipodi:namedview
@@ -23,7 +26,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.78087717"
-     inkscape:cx="445.01237"
+     inkscape:cx="443.73176"
      inkscape:cy="409.15526"
      inkscape:window-width="1440"
      inkscape:window-height="784"
@@ -41,22 +44,31 @@
      stroke-width="1"
      fill="none"
      fill-rule="evenodd"
-     style="fill:#f0edee;fill-opacity:1"
+     style="fill:#7c9395;fill-opacity:1"
      transform="matrix(0.479661, 0, 0, 0.500116, 5.20339, 4.998839)">
     <g
        id="Dribbble-Light-Preview"
        transform="translate(-180.000000, -7479.000000)"
        fill="#000000"
-       style="fill:#f0edee;fill-opacity:1">
+       style="fill:#7c9395;fill-opacity:1">
       <g
          id="icons"
          transform="translate(56.000000, 160.000000)"
-         style="fill:#f0edee;fill-opacity:1">
+         style="fill:#7c9395;fill-opacity:1">
         <path
            d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
            id="linkedin-[#161]"
-           style="fill:#f0edee;fill-opacity:1" />
+           style="fill:#7c9395;fill-opacity:1" />
       </g>
     </g>
   </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>linkedin [#161]</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

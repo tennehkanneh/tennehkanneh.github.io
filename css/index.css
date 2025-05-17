@@ -204,6 +204,7 @@ button:hover {
     margin-top: 1rem;
 
     border: .2rem solid #7C9395;
+    border-radius: 3rem;
 }
 
 /* *************************************************** ABOUT PHOTO DIV STYLES *************************************************** */
@@ -347,10 +348,11 @@ button:hover {
     margin: 0.25rem;
 
     border-radius: 1rem;
-    background-color: #7d7b7d;
-    color: #0a090c;
+    background-color: #2C666E;
+    color: #F0EDEE;
 
     font-size: .9rem;
+    font-family: "Noto Sans", sans-serif;
     display: inline-block;
 }
 
@@ -358,22 +360,19 @@ button:hover {
 
 .project-indicator {
     gap: 0.5rem;
-
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    font-family: "Zilla Slab", serif;
     font-size: 1.9rem;
 }
 
 .project-indicator span {
     /* removed padding, added margin */
     margin: 0 0.5rem;
-    padding: .5rem 1rem;            /* added padding */
+    padding: .5rem 1rem;            
 
-    color: #F0EDEE;
-}
-
-.project-num {
     border: .1rem solid #F0EDEE;
+    color: #F0EDEE;
 }
 
 .project-indicator span.active {
@@ -535,7 +534,14 @@ textarea.contact-inputs {
     width: 5rem;
     height: 5rem;
 
+    border: .2rem solid #7C9395;
+    border-radius: 3rem;
+
     margin-right: 1rem;
+}
+
+.communication-link span {
+    color: #7C9395;
 }
 
 .communication-link:hover {
