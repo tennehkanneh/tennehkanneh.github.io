@@ -114,7 +114,8 @@ header nav ul li a.active {
 
 main {
     display: flex;
-    flex-direction: column;             /* Stack child sections vertically */
+    flex-direction: column;
+    /* Stack child sections vertically */
 }
 
 /* Full-height scrollable section */
@@ -163,7 +164,7 @@ button:hover {
     transition: transform 0.3s ease;
     /* Smooth transition */
     box-shadow: 8px 8px 15px #2c666e;
-    /* Create a redish shadow */
+
 }
 
 /* =======================================================================================================================================
@@ -243,29 +244,76 @@ button:hover {
     justify-content: center;
 }
 
-.resume-container {
-    padding-top: 3rem;
-    gap: .4rem;                  /* Add some gap between image and text */
+input[type="radio"] {
+    display: none;
+}
 
-    
-            
+.accordion {
+    padding: 1.5rem;
+}
+
+.accordion li {
+    list-style: none;
     width: 100%;
+
+    border-left: .5rem solid #F0EDEE;
+    border-right: .5rem solid #F0EDEE;
+    border-top: .5rem solid #F0EDEE;
 }
 
-
-/* *************************************************** RESUME PREVIEW STYLES *************************************************** */
-
-.resume-container iframe {
-    width: 43.25rem;
-    height: 35rem;
-    
+.accordion li.bottom-styling {
+    border-bottom: .5rem solid #F0EDEE;
 }
 
-/* *************************************************** RESUME OPTION STYLES *************************************************** */
+/* *************************************************** ACCORDIAN SECTION HEADING STYLES *************************************************** */
 
-.resume-options {
-    width: 43.25rem;
-   
+.accordion li label {
+    padding: 1rem;
+    display: flex;
+
+    font-family: "Zilla Slab", serif;
+    font-size: 2.5rem;
+
+    cursor: pointer;
+}
+
+label::before {
+    content: '+';
+    margin-right: 1rem;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 400rem;
+    padding: 2rem 3rem;
+}
+
+.accordion input[type="radio"]:checked+label::before {
+    content: '-';
+    margin-right: 1rem;
+}
+
+/* *************************************************** ACCORDIAN CONTENT STYLES *************************************************** */
+
+.accordion .content {
+    max-height: 0;
+    overflow: hidden;
+
+    padding-left: 15rem;
+
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion h3 {
+    font-family: "Zilla Slab", serif;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.accordion h4 {
+    padding: 1rem 0;
+
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.6rem;
 }
 
 /* =======================================================================================================================================
@@ -273,10 +321,11 @@ button:hover {
    ======================================================================================================================================= */
 
 #projects {
-   display: grid;
-   grid-template-columns: 1fr;                  /* Single column layout for main content */
-   
-   justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout for main content */
+
+    justify-items: center;
 }
 
 /* *************************************************** PROJECT INFO + PHOTO STYLES *************************************************** */
@@ -284,12 +333,13 @@ button:hover {
 .project-container {
     padding-top: 3rem;
     padding-bottom: 2.5rem;
-    gap: .4rem;                  /* Add some gap between image and text */
+    gap: .4rem;
+    /* Add some gap between image and text */
 
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
-            
+
     max-width: 120rem;
     width: 95%;
 }
@@ -298,19 +348,23 @@ button:hover {
 .project-photo img {
     width: 30rem;
     height: 30rem;
-    
-    display: block;                 /*removes extra space under image*/
-    object-fit: cover;              /* Ensure image covers the area, preventing distortion */
+
+    display: block;
+    /*removes extra space under image*/
+    object-fit: cover;
+    /* Ensure image covers the area, preventing distortion */
 
     border: 1rem solid #7C9395;
     box-shadow: 26px -26px #F0EDEE;
 }
 
 .project-info {
-    min-width: 15rem;               /* Ensure text doesn't get too squished */
+    min-width: 15rem;
+    /* Ensure text doesn't get too squished */
     padding-left: 5rem;
 
-    flex: 1;                        /* Allow text to take up available space */
+    flex: 1;
+    /* Allow text to take up available space */
 }
 
 .project-info h2 {
@@ -369,7 +423,7 @@ button:hover {
 .project-indicator span {
     /* removed padding, added margin */
     margin: 0 0.5rem;
-    padding: .5rem 1rem;            
+    padding: .5rem 1rem;
 
     border: .1rem solid #F0EDEE;
     color: #F0EDEE;
@@ -381,7 +435,7 @@ button:hover {
     color: #F0EDEE;
 }
 
-.project-indicator span:not(.active):hover{
+.project-indicator span:not(.active):hover {
     background-color: #7d7b7d;
     color: #0a090c;
     border: none;
@@ -395,14 +449,16 @@ button:hover {
 
 #contact-me {
     display: grid;
-    grid-template-columns: 1fr;                  /* Single column layout for main content */
+    grid-template-columns: 1fr;
+    /* Single column layout for main content */
 }
 
 .contact-container {
     grid-column: 1;
 
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns one for the form and the other for links */
+    grid-template-columns: 1fr 1fr;
+    /* Two columns one for the form and the other for links */
 }
 
 /* *************************************************** Contact FORM STYLES *************************************************** */
@@ -534,10 +590,14 @@ textarea.contact-inputs {
     width: 5rem;
     height: 5rem;
 
-    border: .2rem solid #7C9395;
-    border-radius: 3rem;
+   
 
     margin-right: 1rem;
+}
+
+.other img {
+    border: .2rem solid #7C9395;
+    border-radius: 3rem;
 }
 
 .communication-link span {
