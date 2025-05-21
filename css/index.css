@@ -240,81 +240,48 @@ button:hover {
 
 #education-and-experience {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
+    grid-template-rows: auto auto auto;
 }
 
-input[type="radio"] {
-    display: none;
+#education-and-experience .section-headers {
+    grid-row: 1;
 }
 
-.accordion {
-    padding: 1.5rem;
+#education-and-experience .content-ee {
+    grid-row: 2;
+    display: inline-flex;
 }
 
-.accordion li {
-    list-style: none;
-    width: 100%;
-
-    border-left: .5rem solid #F0EDEE;
-    border-right: .5rem solid #F0EDEE;
-    border-top: .5rem solid #F0EDEE;
-}
-
-.accordion li.bottom-styling {
-    border-bottom: .5rem solid #F0EDEE;
-}
-
-/* *************************************************** ACCORDIAN SECTION HEADING STYLES *************************************************** */
-
-.accordion li label {
-    padding: 1rem;
-    display: flex;
-
-    font-family: "Zilla Slab", serif;
-    font-size: 2.5rem;
-
-    cursor: pointer;
-}
-
-label::before {
-    content: '+';
-    margin-right: 1rem;
-}
-
-.accordion input[type="radio"]:checked+label+.content {
-    max-height: 400rem;
-    padding: 2rem 3rem;
-}
-
-.accordion input[type="radio"]:checked+label::before {
-    content: '-';
-    margin-right: 1rem;
-}
-
-/* *************************************************** ACCORDIAN CONTENT STYLES *************************************************** */
-
-.accordion .content {
-    max-height: 0;
-    overflow: hidden;
-
-    padding-left: 15rem;
-
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion h3 {
-    font-family: "Zilla Slab", serif;
+.card-option {
+    margin-right: 2.5rem;            /* margin: <top-bottom> <right-left> */
+    
+    background-color: #F0EDEE;
+    color: #0A090C;
+    text-align: center;
     font-size: 2rem;
-    text-decoration: underline;
-}
-
-.accordion h4 {
-    padding: 1rem 0;
-
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.6rem;
+    width: 19rem;
+    height: 14rem;
+    
+    /* Center Text in Box */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+    /* Box Shadow */
+    box-shadow: 15px -15px #7C9395;
 }
+
+.card-option:hover {
+  transform: translateY(-5px); /* Slightly move up on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+  box-shadow: 8px 8px 15px #F24333; /* make shadow larger on hover */
+}
+
+#education-and-experience .resume-link {
+    grid-row: 3;
+}
+
 
 /* =======================================================================================================================================
    Projects Section Styles (for scrolling single-page layout)
