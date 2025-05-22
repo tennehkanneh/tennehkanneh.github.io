@@ -240,7 +240,7 @@ button:hover {
 
 #education-and-experience {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 #education-and-experience .section-headers {
@@ -249,36 +249,40 @@ button:hover {
 
 #education-and-experience .content-ee {
     grid-row: 2;
+    gap: 10rem;
+
     display: inline-flex;
-}
-
-.card-option {
-    margin-right: 2.5rem;            /* margin: <top-bottom> <right-left> */
-    
-    background-color: #F0EDEE;
-    color: #0A090C;
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Noto Sans", sans-serif;
-    width: 19rem;
-    height: 14rem;
-    
-    /* Center Text in Box */
-    display: flex;
-    align-items: center; 
     justify-content: center;
-    
-    /* Box Shadow */
-    box-shadow: 15px -15px #7C9395;
 }
 
-.card-option:hover {
-  transform: translateY(-5px); /* Slightly move up on hover */
-  transition: transform 0.3s ease; /* Smooth transition */
-  box-shadow: 8px 8px 15px #F24333; /* make shadow larger on hover */
+.content-ee div {
+    width: 35rem;
+    height: auto;
 }
 
-#education-and-experience .resume-link {
+.content-ee h3 {
+    padding-bottom: 1rem;
+    /* text-align: center; */
+    font-size: 1.75rem;
+    font-style: italic;
+}
+
+.content-ee span {
+    color: #7C9395;
+    font-style: normal;
+}
+
+.content-ee p {
+    padding: .3rem;
+    text-decoration: underline;
+}
+
+.content-ee p:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.resume-link {
     grid-row: 3;
 }
 
