@@ -44,7 +44,11 @@ const projectIndicator = document.querySelector(".project-indicator");
 
 function updateProject(index) {
     const project = projects[index];
-    if (!project) return;
+
+    if (!project) {
+        console.error("No data found for the given project.");
+        return;
+    }
 
     projectNameElement.textContent = project.name;
     dateWorkedElement.textContent = `${project.date}`;

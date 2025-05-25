@@ -8,6 +8,7 @@
 * {
     padding: 0;
     margin: 0;
+    z-index: 0;
 }
 
 body,
@@ -36,6 +37,7 @@ p {
 h1,
 h2,
 h3,
+h4,
 a,
 figcaption {
     font-weight: 300;
@@ -243,11 +245,15 @@ button:hover {
     grid-template-rows: auto 1fr auto;
 }
 
+/* *************************************************** HEADER 2 IN SECOND ROW STYLES *************************************************** */
+
 #education-and-experience .section-headers {
     grid-row: 1;
 }
 
-#education-and-experience .content-ee {
+/* *************************************************** LIGHTBOX STYLES *************************************************** */
+
+#education-and-experience .ee-content {
     grid-row: 2;
     gap: 10rem;
 
@@ -255,29 +261,29 @@ button:hover {
     justify-content: center;
 }
 
-.content-ee div {
+.ee-content div {
     width: 35rem;
     height: auto;
 }
 
-.content-ee h3 {
+.ee-content h3 {
     padding-bottom: 1rem;
     /* text-align: center; */
     font-size: 1.75rem;
     font-style: italic;
 }
 
-.content-ee span {
+.ee-content span {
     color: #7C9395;
     font-style: normal;
 }
 
-.content-ee p {
+.ee-content p {
     padding: .3rem;
     text-decoration: underline;
 }
 
-.content-ee p:hover {
+.ee-content p:hover {
     opacity: 50%;
     cursor: pointer;
 }
@@ -286,6 +292,150 @@ button:hover {
     grid-row: 3;
 }
 
+/* *************************************************** LIGHTBOX OVERLAY STYLES *************************************************** */
+.lightbox-overlay {
+    display: none;                              /* Hidden by default */
+    position: fixed;                            /* Stays in place even if the user scrolls */
+    z-index: 99;                                /* Sit on top */
+
+    /* Covers All Mina Content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;                             /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7);     /* Black w/ opacity */
+}
+
+/* *************************************************** LIGHTBOX CONTAINER STYLES *************************************************** */
+
+.lightbox-container {
+    display: none;                              /* Hidden by default */
+    position: fixed;                            /* Stay in place */
+    z-index: 100;                               /* Sit on top of the overlay */
+    
+    /* Center Lightbox*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Size Lightbox and Allow scrolling*/
+    width: 80%;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background-color: #f0edee;
+    box-shadow: 0.8rem -0.8rem #7c9395;
+}
+
+/* *************************************************** LIGHTBOX HEADER STYLES *************************************************** */
+
+.lightbox-header {
+    padding-top: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.lightbox-header h4 {
+    font-size: 2rem;
+    font-family: "Zilla Slab", serif;
+    color: #0a090c;
+}
+
+.lightbox-header h3 {
+    font-family: "Noto Sans", sans-serif;
+    color: #0a090c;
+    font-size: 1.2rem;
+}
+
+/* *************************************************** LIGHTBOX CLOSE BUTTON STYLES *************************************************** */
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* *************************************************** LIGHTBOX CONTENT STYLES *************************************************** */
+
+.lightbox-content {
+    padding: 1rem 1rem;             /* padding: <top-bottom> <right-left> */
+}
+
+.lightbox-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #0A090C;
+}
+
+.lightbox-image-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    justify-self: center;
+}
+
+.lightbox-classes,
+.lightbox-skills {
+    margin-top: 1rem;                /* Space between sections */
+}
+
+.pill-group {
+    display: flex;                  /* Makes the label and pill container sit side-by-side */
+    align-items: center;            
+    flex-wrap: wrap;                /* Allows pills to wrap to the next line if space runs out */
+    gap: 0.5rem; 
+}
+
+.pill-category-label {
+    font-weight: bold;
+    color: #0A090C; 
+    font-size: 1.1em;
+    margin-right: 0.5rem; 
+    white-space: nowrap; 
+}
+
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-family: "Noto Sans", sans-serif;
+    align-items: center;
+}
+
+.skill-pill {
+    background-color: #7c9395;
+    color: #F0EDEE;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.class-pill {
+    background-color: #07393c; 
+    color: #F0EDEE; 
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
 
 /* =======================================================================================================================================
    Projects Section Styles (for scrolling single-page layout)
@@ -561,7 +711,7 @@ textarea.contact-inputs {
     width: 5rem;
     height: 5rem;
 
-   
+
 
     margin-right: 1rem;
 }

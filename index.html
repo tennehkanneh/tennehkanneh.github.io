@@ -26,10 +26,10 @@
     <nav>
       <a href="#">Tenneh Kanneh</a>
       <ul>
-        <li><a href="#about-me">/about</a></li>
-        <li><a href="#projects">/projects</a></li>
-        <li><a href="#education-and-experience">/education & experience</a></li>
-        <li><a href="#contact-me">/contact me</a></li>
+        <li><a href="#about-me" onclick="closeLightbox()">/about</a></li>
+        <li><a href="#projects" onclick="closeLightbox()">/projects</a></li>
+        <li><a href="#education-and-experience" onclick="closeLightbox()">/education & experience</a></li>
+        <li><a href="#contact-me" onclick="closeLightbox()">/contact me</a></li>
       </ul>
     </nav>
   </header>
@@ -69,7 +69,7 @@
 
 
       <figure class="about-photo">
-        <img src="pic_trulli.jpg" alt="Tenneh Kanneh">
+        <img src="https://picsum.photos/600/400?random=5" alt="Tenneh Kanneh">
         <figcaption>Tenneh Kanneh</figcaption>
       </figure>
 
@@ -132,33 +132,93 @@
     <section class="slide" id="education-and-experience">
       <h2 class="section-headers">Education and Experience</h2>
 
-      <div class="content-ee">
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+
+      <div class="lightbox-container" id="lightbox">
+        <div class="lightbox-header">
+          <h4 class="lightbox-name">Lightbox Name Here</h4>
+          <h3 class="lightbox-date">Lightbox Date Here - Lightbox Date Here</h3>
+          <span class="close-button" onclick="closeLightbox()">&times;</span>
+        </div>
+
+        <div class="lightbox-content">
+          <p class="lightbox-description">
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Urna quam phasellus
+            tristique quisque suscipit congue tortor ut. Adipiscing vulputate nibh
+            elit class vestibulum platea neque ac ornare. Pulvinar sagittis rhoncus
+            posuere aliquam pharetra porta sagittis. Placerat hac taciti sit orci
+            fermentum porta velit sem? Est pulvinar elit nisi nulla blandit
+            cubilia sapien vehicula? Ultricies venenatis hac accumsan nisi enim
+            mus. Mollis tempor sodales ullamcorper suscipit placerat accumsan
+            adipiscing nisl conubia. Tortor dictum turpis lacinia; convallis
+            laoreet torquent non at.
+          </p>
+          <div class="lightbox-image-container">
+            <img class="lightbox-image" src="" alt="Lightbox Image" />
+          </div>
+
+          <div class="lightbox-classes">
+            <div class="pill-group">
+              <p class="pill-category-label">Relevant Courses:</p>
+              <div class="pill-container">
+                </div>
+            </div>
+          </div>
+          <div class="lightbox-skills">
+            <div class="pill-group">
+              <p class="pill-category-label">Relevant Skills:</p>
+              <div class="pill-container">
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="ee-content">
         <div>
-          <h3>"Education is not preparation for life;<br> education is life itself."<br><br>
-            <span>- John Dewey </span></h3>
-          <div>
-            <p onclick="openLightbox();toSlide(2)">Associates of Science in Computer Science - 08/2022 : 05/2024</p>
-            <p onclick="openLightbox();toSlide(2)">Bachelors of Science in Computer Science - 05/2024 : Present</p>
-            <p onclick="openLightbox();toSlide(2)">Associates of Science in Computer Science - 08/2022 : 05/2024</p>
-            <p onclick="openLightbox();toSlide(2)">Bachelors of Science in Computer Science - 05/2024 : Present</p>
+          <h3>
+            "Education is not preparation for life;<br/>
+            education is life itself."<br/><br/>
+            <span>- John Dewey </span>
+          </h3>
+          <div id="education">
+            <p onclick="openLightbox('education', 0);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+            <p onclick="openLightbox('education', 1);">
+              Bachelors of Science in Computer Science - 05/2024 : Present
+            </p>
+            <p onclick="openLightbox('education', 2);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+            <p onclick="openLightbox('education', 3);">
+              Bachelors of Science in Computer Science - 05/2024 : Present
+            </p>
           </div>
         </div>
 
         <div>
-          <h3>"Do the best you can until you know better. Then when you know better, do better."<br><br>
-             <span>- Maya Angelou</span> 
-           </h3>
-          <div>
-            <p onclick="openLightbox();toSlide(2)">Associates of Science in Computer Science - 08/2022 : 05/2024</p>
-            <p onclick="openLightbox();toSlide(2)">Bachelors of Science in Computer Science - 05/2024 : Present</p>
-            <p onclick="openLightbox();toSlide(2)">Associates of Science in Computer Science - 08/2022 : 05/2024</p>
-            <p onclick="openLightbox();toSlide(2)">Bachelors of Science in Computer Science - 05/2024 : Present</p>
+          <h3>
+            "Do the best you can until you know better. Then when you know better,
+            do better."<br/><br/>
+            <span>- Maya Angelou</span>
+          </h3>
+          <div id="experience">
+            <p onclick="openLightbox('experience', 0);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+            <p onclick="openLightbox('experience', 1);">
+              Bachelors of Science in Computer Science - 05/2024 : Present
+            </p>
+            <p onclick="openLightbox('experience', 2);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
           </div>
         </div>
       </div>
 
       <a href="" target="_blank" class="communication-link resume-link">
-        <img src="/assets/resume.svg" alt="Resume icon">
+        <img src="/assets/resume.svg" alt="Resume icon" />
         <span>Resume</span>&nbsp;- Checkout My Resume Instead
       </a>
     </section>
@@ -214,6 +274,7 @@
   </main>
   <script type="module" src="/js/index.js"></script>
   <script type="module" src="/js/projects.js"></script>
+  <script type="module" src="/js/educationexperince.js"></script>
   <!-- <script type="module" src="/js/eduexp.js"></script> -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="/js/contact.js"></script>
