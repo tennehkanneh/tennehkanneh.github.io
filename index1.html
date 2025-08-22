@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenneh Kanneh</title>
+  <meta name="description" content="Tenneh Kanneh, software developer and computer science undergraduate. Take a look at my portfolio.">
+  <!-- <link rel="stylesheet" href="/css/index.css"> -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <!----------------------------------------- PAGE HEADER ----------------------------------------->
+  <header>
+    <nav>
+      <div>
+
+      </div>
+
+      <div>
+        
+      </div>
+      <a href="#">Tenneh (ten - nay)</a>
+      <ul>
+        <li><a href="#about-me" onclick="closeLightbox()">/about</a></li>
+        <li><a href="#projects" onclick="closeLightbox()">/projects</a></li>
+        <li><a href="#education-and-experience" onclick="closeLightbox()">/education & experience</a></li>
+        <li><a href="#contact-me" onclick="closeLightbox()">/contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!----------------------------------------- MAIN CONTENT ----------------------------------------->
+  <main id="content-area">
+
+    <!----------------------------------------- SECTION: About Me ----------------------------------------->
+    <section class="slide" id="about-me">
+      <div class="about-info">
+        <h1>Pronounced Ten - Nay</h1>
+        <br>
+        <h2><span>SOFTWARE DEVELOPER</span><br> with an interest in <span>UX DESIGN</span></h2>
+        <br>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Urna quam phasellus tristique quisque suscipit congue
+          tortor ut. Adipiscing vulputate nibh elit class vestibulum platea neque ac ornare.
+          Pulvinar sagittis rhoncus posuere aliquam pharetra porta sagittis.
+          Placerat hac taciti sit orci fermentum porta velit sem?
+          Est pulvinar elit nisi nulla blandit cubilia sapien vehicula? Ultricies venenatis hac accumsan nisi enim mus.
+          Mollis tempor sodales ullamcorper suscipit placerat accumsan adipiscing nisl conubia. Tortor dictum turpis
+          lacinia; convallis laoreet torquent non at.</p>
+
+        <div>
+          <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank" class="communication-link other">
+            <img src="/assets/linkedin-about.svg" alt="LinkedIn icon">
+          </a>
+          <a href="https://boisestate.joinhandshake.com/profiles/srxzbv" target="_blank"
+            class="communication-link other">
+            <img src="/assets/handshake-about.svg" alt="Handshake icon">
+          </a>
+          <a href="https://github.com/tennehkanneh" target="_blank" class="communication-link other">
+            <img src="/assets/github-about.svg" alt="GitHub icon">
+          </a>
+        </div>
+      </div>
+
+
+      <figure class="about-photo">
+        <img src="https://picsum.photos/600/400?random=5" alt="Tenneh Kanneh">
+        <figcaption>Tenneh Kanneh</figcaption>
+      </figure>
+
+    </section>
+
+    <!----------------------------------------- SECTION: Projects ----------------------------------------->
+    <section class="slide" id="projects">
+      <h2 class="section-headers">Projects</h2>
+      <div class="project-container">
+
+        <figure class="project-photo">
+          <img src="https://picsum.photos/200/300" alt="Project Image" class="project-image">
+        </figure>
+
+        <div class="project-info">
+          <h2 class="project-name">Project Name</h2>
+          <h3 class="date-worked">MONTH YEAR - MONTH YEAR</h3>
+          <p class="project-description">Lorem ipsum odor amet, consectetuer adipiscing elit.
+            Urna quam phasellus tristique quisque suscipit congue tortor ut.
+            Adipiscing vulputate nibh elit class vestibulum platea neque ac ornare.
+            Pulvinar sagittis rhoncus posuere aliquam pharetra porta sagittis.
+            Placerat hac taciti sit orci fermentum porta velit sem?
+            Est pulvinar elit nisi nulla blandit cubilia sapien vehicula? Ultricies venenatis hac accumsan nisi enim
+            mus.
+            Mollis tempor sodales ullamcorper suscipit placerat accumsan adipiscing nisl conubia. Tortor dictum turpis
+            lacinia;
+            convallis laoreet torquent non at.</p>
+          <div class="skills-used">
+            <p><span class="skill-pill">Skill #1</span></p>
+            <p><span class="skill-pill">Skill #2</span></p>
+            <p><span class="skill-pill">Skill #3</span></p>
+            <p><span class="skill-pill">Skill #4</span></p>
+            <p><span class="skill-pill">Skill #5</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project-indicator">
+        <span class="nav-arrow-indicator" data-direction="prev">
+          <p>&#10094; Previous</p>
+        </span>
+        <span class="project-num" data-index="0">
+          <p>1</p>
+        </span>
+        <span class="project-num" data-index="1">
+          <p>2</p>
+        </span>
+        <span class="project-num" data-index="2">
+          <p>3</p>
+        </span>
+        <span class="nav-arrow-indicator" data-direction="next">
+          <p>Next &#10095;</p>
+        </span>
+      </div>
+
+    </section>
+
+    <!----------------------------------------- SECTION: Education & Experince ----------------------------------------->
+    <section class="slide" id="education-and-experience">
+      <h2 class="section-headers">Education and Experience</h2>
+
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+
+      <div class="lightbox-container" id="lightbox">
+        <div class="lightbox-header">
+          <h4 class="lightbox-name">Lightbox Name Here</h4>
+          <h3 class="lightbox-date">Lightbox Date Here - Lightbox Date Here</h3>
+          <span class="close-button" onclick="closeLightbox()">&times;</span>
+        </div>
+
+        <div class="lightbox-content">
+          <p class="lightbox-description">
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Urna quam phasellus
+            tristique quisque suscipit congue tortor ut. Adipiscing vulputate nibh
+            elit class vestibulum platea neque ac ornare. Pulvinar sagittis rhoncus
+            posuere aliquam pharetra porta sagittis. Placerat hac taciti sit orci
+            fermentum porta velit sem? Est pulvinar elit nisi nulla blandit
+            cubilia sapien vehicula? Ultricies venenatis hac accumsan nisi enim
+            mus. Mollis tempor sodales ullamcorper suscipit placerat accumsan
+            adipiscing nisl conubia. Tortor dictum turpis lacinia; convallis
+            laoreet torquent non at.
+          </p>
+          <div class="lightbox-image-container">
+            <img class="lightbox-image" src="" alt="Lightbox Image" />
+          </div>
+
+          <div class="lightbox-classes">
+            <div class="pill-group">
+              <p class="pill-category-label">Relevant Courses:</p>
+              <div class="pill-container">
+                </div>
+            </div>
+          </div>
+          <div class="lightbox-skills">
+            <div class="pill-group">
+              <p class="pill-category-label">Relevant Skills:</p>
+              <div class="pill-container">
+                </div>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="ee-content">
+        <div>
+          <h3>
+            "Education is not preparation for life;<br/>
+            education is life itself."<br/><br/>
+            <span>- John Dewey </span>
+          </h3>
+          <div id="education">
+            <p onclick="openLightbox('education', 0);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+            <p onclick="openLightbox('education', 1);">
+              Bachelors of Science in Computer Science - 05/2024 : Present
+            </p>
+            <p onclick="openLightbox('education', 2);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+            <p onclick="openLightbox('education', 3);">
+              Bachelors of Science in Computer Science - 05/2024 : Present
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3>
+            "Do the best you can until you know better. Then when you know better,
+            do better."<br/><br/>
+            <span>- Maya Angelou</span>
+          </h3>
+          <div id="experience">
+            <p onclick="openLightbox('experience', 0);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+            <p onclick="openLightbox('experience', 1);">
+              Bachelors of Science in Computer Science - 05/2024 : Present
+            </p>
+            <p onclick="openLightbox('experience', 2);">
+              Associates of Science in Computer Science - 08/2022 : 05/2024
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a href="" target="_blank" class="communication-link resume-link">
+        <img src="/assets/resume.svg" alt="Resume icon" />
+        <span>Resume</span>&nbsp;- Checkout My Resume Instead
+      </a>
+    </section>
+    <!----------------------------------------- SECTION: Contact Me ----------------------------------------->
+    <section class="slide" id="contact-me">
+      <h2 class="section-headers">Contact Me</h2>
+      <!-- Source Java script for email sending from https://smtpjs.com/-->
+      <div class="contact-container">
+        <div class="email-communication">
+          <h2>Send Me A Quick Email</h2>
+          <br><br><br>
+          <form action="#">
+            <div class="required-inputs">
+              <div>
+                <input type="text" placeholder="Full Name (required)" id="name" class="contact-inputs"
+                  autocomplete="off" required>
+                <!-- <div class="error-txt">What should I call you?</div> -->
+              </div>
+              <div>
+                <input type="email" placeholder="Email (required)" id="email" class="contact-inputs" autocomplete="off"
+                  required>
+                <!-- <div class="error-txt">How do contact you after?</div> -->
+              </div>
+            </div>
+
+            <input type="text" placeholder="Subject" class="contact-inputs">
+            <div class="textarea-field">
+              <textarea placeholder="Type Me a Message......" id="message" class="contact-inputs"></textarea>
+              <!-- <div class="error-txt">Let me know what's on you mind!</div> -->
+            </div>
+          </form>
+          <button type="submit">Send</button>
+        </div>
+
+        <div class="other-communication">
+          <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank" class="communication-link other">
+            <img src="/assets/linkedin-about.svg" alt="LinkedIn icon">
+            <span>LinkedIn</span>&nbsp;- Let's Connect
+          </a>
+          <a href="https://boisestate.joinhandshake.com/profiles/srxzbv" target="_blank"
+            class="communication-link other">
+            <img src="/assets/handshake-about.svg" alt="Handshake icon">
+            &nbsp;<span>Handshake</span>&nbsp;- Follow Me
+          </a>
+          <a href="https://github.com/tennehkanneh" target="_blank" class="communication-link other">
+            <img src="/assets/github-about.svg" alt="GitHub icon">
+            <span> GitHub</span>&nbsp;- See My Work
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- <script type="module" src="/js/index.js"></script>
+  <script type="module" src="/js/projects.js"></script>
+  <script type="module" src="/js/educationexperince.js"></script> -->
+  <!-- <script type="module" src="/js/eduexp.js"></script> -->
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/js/contact.js"></script> -->
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
