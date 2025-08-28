@@ -1,4 +1,4 @@
-const menuIcon = document.getElementById('menu-icon');
+const menuIcon = document.getElementById('menu-button');
 const navLinks = document.getElementById('nav-links');
 
 menuIcon.addEventListener('click', () => {
@@ -10,31 +10,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.slide');
     const navLinks = document.querySelectorAll('nav ul li a');
 
-    const observer = new IntersectionObserver(sections => {
-        sections.forEach(sec => {
-            if (sec.isIntersecting) {
-                // Get the id of the intersecting section
-                const id = sec.target.getAttribute('id');
+    const observer = new IntersectionObserver(entries => {
+        let visibleSection = null;
 
-                // Remove 'active' class from all nav links
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-
-                // Add 'active' class to the corresponding nav link
-                navLinks.forEach(link => {
-                    if (link.getAttribute('href') === `#${id}`) {
-                        link.classList.add('active');
-                    }
-                });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                visibleSection = entry.target;
             }
         });
-    }, {
-        threshold: 0.5 // Adjust this threshold as needed (0.5 means 50% of the section is visible)
-    });
 
-    // Observe each section
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+        if (visibleSection) {
+            const id = visibleSection.getAttribute('id');
+
+            // Remove all actives first
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Highlight the matching one
+            const activeLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+            if (activeLink) activeLink.classList.add('active');
+        }
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => observer.observe(section));
 });
