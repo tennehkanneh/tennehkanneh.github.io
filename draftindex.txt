@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tenneh Kanneh</title>
   <meta name="description" content="Tenneh Kanneh, software developer and computer science undergraduate. Take a look at my portfolio.">
-  <!-- <link rel="stylesheet" href="/css/index.css"> -->
+  <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -269,12 +269,12 @@
     </section>
   </main>
   
-  <!-- <script type="module" src="/js/index.js"></script>
+  <script type="module" src="/js/index.js"></script>
   <script type="module" src="/js/projects.js"></script>
-  <script type="module" src="/js/educationexperince.js"></script> -->
-  <!-- <script type="module" src="/js/eduexp.js"></script> -->
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="/js/contact.js"></script> -->
+  <script type="module" src="/js/educationexperince.js"></script>
+  <script type="module" src="/js/eduexp.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/js/contact.js"></script>
   <script src="/js/script.js"></script>
 </body>
 

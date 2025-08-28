@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body>
-        <header> 
-            <nav>
-                <div class="name-pronunciation">
-                    <a href="#">tenneh (ten - nay)</a>
-                </div>
-                <button class="menu-button" id="menu-button" >
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
-                        <line class="line top" x1="3" y1="6" x2="21" y2="6"></line>
-                        <line class="line middle" x1="3" y1="12" x2="21" y2="12"></line>
-                        <line class="line bottom" x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">e + e</a></li>
-                    <li><a href="#">contact me</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenneh Kanneh</title>
+    <meta name="description"
+        content="My names is Tenneh (pronounced ten-nay. I'm a Software and Data engineer. Take a look at my portfolio.">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!----------------------------------------- NAVIGATION ----------------------------------------->
+        <nav>
+            <div class="name-pronunciation">
+                <a href="#">tenneh (ten - nay)</a>
+            </div>
+            <button class="menu-button" id="menu-button">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+                    <line class="line top" x1="3" y1="6" x2="21" y2="6"></line>
+                    <line class="line middle" x1="3" y1="12" x2="21" y2="12"></line>
+                    <line class="line bottom" x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact-me">contact me</a></li>
+            </ul>
+        </nav>
+
+        <!----------------------------------------- ASIDE ----------------------------------------->
+        <aside class="side-links">
+            <div class="social-links" id="social-links">
+                <a href="https://github.com/tennehkanneh" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://medium.com/@tennehkanneh" target="_blank"><i class="ri-medium-line"></i></i></a>
+                <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://x.com/tennehkanneh"><i class="ri-twitter-x-fill"></i></a>
+                <!-- TODO: Add Resume PDF Link-->
+                <a href="#"><i class="ri-attachment-2"></i></a>
+            </div>
+        </aside>
+
+        <!----------------------------------------- MAIN ----------------------------------------->
         <main>
+            <section class="slide home" id="home">
+                <div class="home-branding" id="home-branding">
+                    <h1>Tenneh Kanneh</h1>
+                    <h2>Software + Data Egineer</h2>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Urna quam phasellus tristique quisque
+                        suscipit congue tortor ut. Adipiscing vulputate 
+                        nibh elit class vestibulum platea neque ac ornare.
+                        Pulvinar sagittis rhoncus posuere aliquam pharetra porta sagittis.
+                        Placerat hac taciti sit orci fermentum porta velit sem?
+                        Est pulvinar elit nisi nulla blandit cubilia sapien vehicula? Ultricies venenatis hac accumsan nisi enis mus.
+                        Mollis tempor sodales ullamcorper suscipit placerat accumsan adipiscing nisl conubia. Tortor
+                        dictum turpis lacinia; convallis laoreet torquent non at.</p>
+                    <button>Checkout My Projects</button>
+                </div>
+
+                <div class="home-images">
+                    <img id="starburst" class="starburst" src="/assets/starburst.png" alt="">
+                    <img id="tenneh-kanneh" class="tenneh-kanneh" src="/assets/tennehkanneh.png" alt="Tenneh Kanneh">
+                </div>
+            </section>
 
         </main>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
 
-        <script src="/js/script.js"></script>
-    </body>
 </html>
