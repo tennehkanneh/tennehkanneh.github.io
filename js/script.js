@@ -33,3 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => observer.observe(section));
 });
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    if (window.location.hash === "#resume") {
+      window.location.href = "assets/resume.pdf";
+    }
+  });
