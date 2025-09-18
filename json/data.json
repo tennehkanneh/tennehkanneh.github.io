@@ -1,0 +1,44 @@
+{
+    "project-01": {
+        "projectName": "Grade Calculator",
+        "link": "https://github.com/tennehkanneh/Grade-Calculator.",
+        "image": "/assets/gif/grade-calculator-video.gif",
+        "description": "A modern desktop application built with JavaFX that calculates academic grades based on both cumulative (total points) and weighted grading systems. The application efficiently reads all grade data from local .csv files, demonstrating a clean and modular design with robust data handling.",
+        "skills": [
+            "JavaFX",
+            "FXML",
+            "CSV File Handling",
+            "MVC Pattern",
+            "UI/UX Design",
+            "Event-Driven Programming",
+            "Object-Oriented Programming (OOP)"
+        ],
+        "date": {
+            "month": "June",
+            "day": "20",
+            "year": "2025"
+        }
+    },
+
+    "project-02": {
+        "projectName": "Customizable Task Manager (CLI)",
+        "link": "https://github.com/tennehkanneh/CLI-customizable-task-manager",
+        "image": "/assets/gif/cli-task-manager-video.gif",
+        "description": "",
+        "skills": [
+            "Java",
+            "JUnit",
+            "Queue",
+            "Stack",
+            "Linked List",
+            "Double Linked List",
+            "Program Testing",
+            "Object-Oriented Programming"
+        ],
+        "date": {
+            "month": 8,
+            "day": 1,
+            "year": 2025
+        }
+    }
+}
