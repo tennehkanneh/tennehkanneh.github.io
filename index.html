@@ -27,7 +27,6 @@
                 </svg>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#contact-me">contact me</a></li>
@@ -49,10 +48,10 @@
         <!----------------------------------------- MAIN ----------------------------------------->
         <main>
             <!----------------------------------------- SECTION: HOME ----------------------------------------->
-            <section class="slide home" id="home">
-                <div class="home-branding" id="home-branding">
+            <section class="slide about" id="about">
+                <div class="about-branding" id="about-branding">
                     <h1>Tenneh Kanneh</h1>
-                    <h2>Software & Data Engineer</h2>
+                    <h2>Software Engineer</h2>
                     <p>I create software that puts people first, intuitive, accessible, and driven by purpose.
                         With a strong foundation in development, data engineering, and user experience design,
                         I thrive at the intersection of code and compassion.
@@ -65,13 +64,12 @@
                     </p>
                     <button><a href="https://github.com/tennehkanneh" target="_blank">Checkout My Projects</a></button>
                 </div>
-                <div class="home-images">
+                <div class="about-images">
                     <img id="starburst" class="starburst" src="/assets/starburst.png" alt="">
                     <img id="tenneh-kanneh" class="tenneh-kanneh" src="/assets/tennehkanneh.png" alt="Tenneh Kanneh">
                 </div>
             </section>
 
-            <section class="slide about" id="about"></section>
 
             <!----------------------------------------- SECTION: PROJECTS ----------------------------------------->
             <section class="slide projects" id="projects">
@@ -80,20 +78,36 @@
                     <p>"It does not matter how slowly you go so long as you do not stop." <i>– Confucius</i></p>
                 </div>
 
-                <div class="projecst-div" id="projects-div">
-
-                    <div class="project-box" id="project-box">
-                        <img class="project-box-image" id="project-box-image" src="/assets/starburst.png" alt="">
-                        <h3 href="#"><a>Project Name</a></h3>
-                        <div class="project-box-skill" id="project-box-skill">
-                            <p><span class="skill">Skill #1</span></p>
-                            <p><span class="skill">Skill #1</span></p>
-                            <p><span class="skill">Skill #1</span></p>
+                <div class="projects-content">
+                    <div class="projecst-div" id="projects-div">
+                        <div class="project-highlight" id="project-highligt">
+                            <img class="project-box-image" id="project-box-image" src="/assets/starburst.png" alt="">
                         </div>
-
                     </div>
 
+                    <div class="projecst-list" id="projects-list">
+                        <div class="project-choice" id="project-choice active">
+                            <h3 class="project-name" id="project-name" href="#"><a>Project Name</a></h3>
+                            <p><span class="project-year" id="project-year">20XX</span></hp>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                                Amet consectetur adipiscing elit quisque faucibus ex sapien.
+                                Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                                Vitae pellentesque sem placerat in id cursus mi.
+                            </p>
+                        </div>
+
+                        <div class="project-choice" id="project-choice">
+                            <h3 class="project-name" id="project-name" href="#"><a>Project Name</a></h3>
+                            <p><span class="project-year" id="project-date">20XX</span></hp>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                                Amet consectetur adipiscing elit quisque faucibus ex sapien.
+                                Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                                Vitae pellentesque sem placerat in id cursus mi.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
 
             </section>
 
