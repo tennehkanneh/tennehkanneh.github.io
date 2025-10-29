@@ -260,7 +260,7 @@ main {
     height: 4px;
     background-color: var(--primary-color);
 
-    margin-top: 59.3px;
+    margin-top: 50px;
 
 }
 
@@ -363,7 +363,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    padding-top: 60px;
+    padding-top: 25px;
 
     gap: 50px;
 }
@@ -382,11 +382,6 @@ main {
     display: block;
 }
 
-.recent-works {
-    font-family: "rasputin", sans-serif;
-    color: var(--primary-color);
-}
-
 .prject-choice.active h3 {
     color: var(--primary-color);
 }
@@ -398,10 +393,6 @@ main {
 .project-name {
     font-family: "DM Sans", sans-serif;
     font-size: 17.7px;
-}
-
-.project-year {
-    opacity: 50%;
 }
 
 .skills-used {
@@ -429,8 +420,8 @@ main {
     display: inline-block;
 }
 
-.project-link {
-    margin-top: 10px;
+.projects-link {
+    margin-top: 20px;
 }
 
 .projects-link span {
