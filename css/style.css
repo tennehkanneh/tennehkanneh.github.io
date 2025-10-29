@@ -234,10 +234,12 @@ main {
 
 
 .slide {
-    width: auto;
+    width: 100%;
+    min-height: 100vh;
+
     display: flex;
-    align-items: center;
-    padding: 4rem;
+    
+    padding-right: 4rem;
     box-sizing: border-box;
 }
 
@@ -272,7 +274,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .about-branding h1 {
