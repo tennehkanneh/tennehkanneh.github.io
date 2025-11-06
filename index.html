@@ -13,7 +13,8 @@
 
 <body>
     <div class="grid-container">
-        <!----------------------------------------- NAVIGATION ----------------------------------------->
+
+        <!--------------------------------------- NAVIGATION --------------------------------------->
         <nav>
             <div class="name-pronunciation">
                 <a href="#">tenneh (ten - nay)</a>
@@ -27,6 +28,7 @@
                 </svg>
             </button>
             <ul class="nav-links" id="nav-links">
+                <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#contact-me">contact me</a></li>
@@ -40,18 +42,19 @@
                 <a href="https://medium.com/@tennehkanneh" target="_blank"><i class="ri-medium-line"></i></i></a>
                 <a href="https://www.linkedin.com/in/tennehkanneh/" target="_blank"><i class="ri-linkedin-fill"></i></a>
                 <a href="https://x.com/tennehkanneh" target="_blank"><i class="ri-twitter-x-fill"></i></a>
-                <!-- TODO: Add Resume PDF Link-->
+
                 <a href="#resume" target="_blank"><i class="ri-attachment-2"></i></a>
             </div>
         </aside>
 
         <!----------------------------------------- MAIN ----------------------------------------->
         <main>
+
             <!----------------------------------------- SECTION: HOME ----------------------------------------->
-            <section class="slide about" id="about">
-                <div class="about-branding" id="about-branding">
+            <section class="slide home" id="home">
+                <div class="home-branding" id="home-branding">
                     <h1>Tenneh Kanneh</h1>
-                    <h2>Software Engineer</h2>
+                    <h2>Software & Data Engineer</h2>
                     <p>I create software that puts people first, intuitive, accessible, and driven by purpose.
                         With a strong foundation in development, data engineering, and user experience design,
                         I thrive at the intersection of code and compassion.
@@ -60,18 +63,31 @@
                         I’m passionate about collaborating with mission-driven teams,
                         solving real-world problems, and building technology that empowers.
                         If you're working on something that blends tech with impact,
-                        let’s connect I’d love to be part of it..
+                        let’s connect I’d love to be part of it.
                     </p>
                     <button><a href="https://github.com/tennehkanneh" target="_blank">Checkout My Projects</a></button>
                 </div>
-                <div class="about-images">
+                <div class="home-images">
                     <img id="starburst" class="starburst" src="/assets/starburst.png" alt="">
                     <img id="tenneh-kanneh" class="tenneh-kanneh" src="/assets/tennehkanneh.png" alt="Tenneh Kanneh">
                 </div>
             </section>
 
-            <!----------------------------------------- SECTION: PROJECTS ----------------------------------------->
 
+
+
+
+
+
+
+
+
+
+            <section class="slide about" id="about">
+                <h2 class="section-heading">About</h2>
+            </section>
+
+            <!----------------------------------------- SECTION: PROJECTS ----------------------------------------->
             <section class="slide projects" id="projects">
                 <div class="section-heading" id="secion-heading">
                     <h2>Projects</h2>
@@ -79,10 +95,9 @@
                 </div>
 
                 <div class="projects-content">
-
-
                     <div class="projects-list" id="projects-list">
-                        <div class="project-choice" id="project-choice active">
+                        
+                        <div class="project-choice" id="project-choice">
                             <h3 class="project-name" id="project-name" href="#"><a>Project Name 1</a></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.
                                 Amet consectetur adipiscing elit quisque faucibus ex sapien.
@@ -136,19 +151,23 @@
                         <img class="project-box-image" id="project-box-image" src="/assets/starburst.png"
                             alt="Highlighted Project Image">
                     </div>
-
-
-
                 </div>
-
-
             </section>
 
-            <!----------------------------------------- SECTION: CONTACT ME ----------------------------------------->
-            <section class="slide contact-me" id="contact-me"></section>
+
+            <section class="slide contact-me" id="contact-me">
+                <h2 class="section-heading">Contact Me</h2>
+            </section>
 
         </main>
+
+
+        <!----------------------------------------- SECTION: CONTACT ME ----------------------------------------->
+        <!-- <section class="slide contact-me" id="contact-me"></section> -->
+
     </div>
+
+
     <script src="/js/script.js"></script>
 </body>
 
