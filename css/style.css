@@ -114,8 +114,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5625rem;
-    /* 25 px */
+    padding: 1.5625rem; /* 25 px */
 
     z-index: 10000;
 }
@@ -134,8 +133,7 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 3.75rem;
-    /* 60 px */
+    margin-left: 3.75rem; /* 60 px */
     position: relative;
 }
 
@@ -144,8 +142,7 @@ nav {
 
     font-size: 1rem;
     position: relative;
-    padding: .625rem;
-    /* 10 px */
+    padding: .625rem; /* 10 px */
     transition: color 0.3s;
 }
 
@@ -159,12 +156,10 @@ nav {
 
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
-    text-decoration-thickness: .125rem;
-    /* 2 px */
+    text-decoration-thickness: .125rem; /* 2 px */
     text-decoration-style: wavy;
 
-    text-underline-offset: 0.3125rem;
-    /* 5 px */
+    text-underline-offset: 0.3125rem; /* 5 px */
 }
 
 .menu-button .line {
