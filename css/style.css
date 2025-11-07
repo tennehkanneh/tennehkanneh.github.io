@@ -75,6 +75,7 @@ body {
 
 main {
     width: 100%;
+
     /* height: 100vh; */
 
     grid-area: main;
@@ -95,13 +96,11 @@ main {
     padding: 4rem; /* 64 px */
 }
 
-@media (max-width: 791px) {
 
-    .about,
-    .projects,
-    .contact-me {
-        margin-top: 15rem; /* 240 px*/
-    }
+.about,
+.projects,
+.contact-me {
+    margin-top: 15rem; /* 240 px*/
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
