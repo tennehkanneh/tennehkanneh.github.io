@@ -30,9 +30,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-snap-type: proximity;
-
+    
     font-size: 16px;
 }
 
@@ -60,6 +58,8 @@ body {
 
     background-color: var(--bg-color);
     overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
 .grid-container {
@@ -75,16 +75,18 @@ body {
 
 main {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 
     grid-area: main;
+    overflow-y: scroll;
+
     /* scroll-snap-type: y mandatory; */
 }
 
 
 .slide {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 
     /* scroll-snap-align: start; */
 
@@ -98,8 +100,7 @@ main {
     .about,
     .projects,
     .contact-me {
-        margin-top: 15rem;
-        /* 240 px*/
+        margin-top: 15rem; /* 240 px*/
     }
 }
 
@@ -110,6 +111,8 @@ main {
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 nav {
     grid-area: nav;
+
+    top: 0;
 
     display: flex;
     justify-content: space-between;
